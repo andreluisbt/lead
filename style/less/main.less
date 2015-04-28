@@ -3,9 +3,26 @@
 @font-size-base: 1.6em;
 
 
+
+/********************/
+
+
+@dell-gray-base: #DEDEDE;
+@dell-gray-light: lighten(@dell-gray-base, 3%);
+@dell-gray-xlight: lighten(@dell-gray-base, 8%);
+@dell-gray-dark: lighten(@dell-gray-base, -8%);
+@dell-gray-xdark: lighten(@dell-gray-base, -63%);
+
+
+@dell-blue-base: #008CCA;
+@dell-blue-ligth: lighten(@dell-blue-base, 5%);
+@dell-blue-dark: lighten(@dell-blue-base, -5%);
+@dell-blue-xdark: lighten(@dell-blue-base, -20%);
+
+
 body{
-	background: #F2F0F1;
-	color: #403E3F;
+	background: @dell-gray-xlight;
+	color: @dell-gray-xdark;
 }
 
 ul{
@@ -15,6 +32,14 @@ ul{
 		list-style: none;
 	}
 }
+
+a{
+	text-decoration: none !important;
+	transition: .3s;
+	color: inherit;
+}
+
+
 
 #wrapPage{
 	margin-top: 5px;
@@ -29,11 +54,50 @@ ul{
 			margin-right: 5px; 
 			span{
 				font-size: 1.2em;
-				background-color: #C9C9C9;
+				background-color: @dell-gray-dark;
 				padding: 0px 8px;
 				width: 30px;
 				display: inline-block;
 				text-align: center;
+			}
+		}
+	}
+}
+
+
+#navigationBar{
+	background-color: @dell-blue-base;
+	
+	ul{
+		li{
+			display: inline-block;
+			a{
+				color: #fff;
+				font-size: 1.2em;
+				padding: 30px 10px;
+				display: block;
+				
+				&:hover,
+				&:focus{
+					background-color: @dell-blue-dark;
+				}
+				
+			}
+		}
+	}
+}
+
+
+#userBar{
+	ul{
+		li{
+			display: inline-block;
+			a{
+				&:hover,
+				&:focus{
+					//background-color: @dell-blue-dark;
+				}
+				
 			}
 		}
 	}

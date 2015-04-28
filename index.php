@@ -52,7 +52,47 @@
 				</ul>
 			</div>
 		</div>		
-
+		
+		<div id="navigationBar">
+			<div class="container">
+				<ul class="pull-right">
+					<li>
+						<a href="#">Nossos cursos</a>
+					</li>
+					<li>
+						<a href="#">APP/Mobile</a>
+					</li>
+					<li>
+						<a href="#">Acessibilidade</a>
+					</li>
+					<li>
+						<a href="#">Para Voçê</a>
+					</li>
+					<li>
+						<a href="#">Empressa</a>
+					</li>
+					<li>
+						<a href="#">Governo</a>
+					</li>
+					<li>
+						<a href="#">Contato</a>
+					</li>
+				</ul>
+			</div>
+		</diV>
+		
+		<div id="userBar">
+			<div class="container">
+				<ul class="pull-left">
+					<li>
+						<a href="#">Portifólio de cursos</a>
+					</li>
+					<li>
+						<a href="#">Escolha seu DELL</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
 	</body>
 
