@@ -2,6 +2,28 @@
 
 @font-size-base: 1.6em;
 
+@font-size-h1: 4em;
+@font-size-h2: 3em;
+@font-size-h3: 2.5em;
+@font-size-h4: 2em;
+@font-size-h5: 1.5em;
+@font-size-h6: 1em;
+
+h4, .h4, h5, .h5, h6, .h6 {
+	font-weight: normal;
+}
+
+@border-radius-base: 0;
+@border-radius-large: 0;
+@border-radius-small: 0;
+
+.btn{
+	font-size: inherit;
+}
+
+.dropdown-menu{
+	font-size: inherit;
+}
 
 
 /********************/
@@ -89,16 +111,92 @@ a{
 
 
 #userBar{
-	ul{
-		li{
-			display: inline-block;
-			a{
-				&:hover,
-				&:focus{
-					//background-color: @dell-blue-dark;
+	background-color: #fff;
+	.container{
+		>ul{
+			>li{
+				display: inline-block;
+				>a{
+					padding: 12px;
+	  				display: block;
+					&:hover,
+					&:focus{
+						//background-color: @dell-blue-dark;
+					}
 				}
-				
+			}
+		}
+		
+		#userButton{
+			>a{
+				padding: 12px;
+	  			display: block;
+			}
+			ul{
+				text-align: center;
+				background-color: @dell-blue-base;
+				padding: 4px;
+				li{
+					a{
+						color: #fff;
+						padding: 5px 40px;
+						&:hover,
+						&:focus{
+							background-color: @dell-blue-xdark;
+						}
+					}
+				}
 			}
 		}
 	}
 }
+
+#breadcrumb{
+	margin-top: 30px;
+  	font-size: 0.8em;
+	ul{
+		li{
+			display: inline-block;
+		}
+	}
+}
+
+section#main{
+
+	h5.page-title{
+		color: @dell-blue-base;
+		border-top: 1px solid @dell-blue-base;
+		border-bottom: 1px solid @dell-blue-base;
+		text-align: center;
+		display: table;
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+	
+	.couses-in-progress{
+	  	text-align: center;
+  		margin-top: 50px;
+		
+		.pie-chart{
+			display: inline-block;
+	  		background-color: @dell-blue-dark;
+	  		border-radius: 100px;
+			margin: 40px;
+			position: relative;
+			canvas{
+				margin: -10px;
+		  	}
+		  	span{
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				top: 35%;
+				font-size: 22px;
+				color: #fff;
+				padding: 0 20px
+		  	}
+		}
+	}
+	
+}
+

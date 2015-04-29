@@ -4,8 +4,10 @@
 		<meta charset="UTF-8">
 		
 		<script type="text/javascript" src="lib/jquery-2.1.3/jquery-2.1.3.min.js"></script>
-		
 		<script type="text/javascript" src="lib/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="lib/easy-pie-chart-2.1.6/dist/jquery.easypiechart.js"></script>
+		
+		<script type="text/javascript" src="js/main.js"></script>
 		
 		<link rel="stylesheet/less" type="text/css" href="style/less/main.less" />
 		
@@ -91,8 +93,45 @@
 						<a href="#">Escolha seu DELL</a>
 					</li>
 				</ul>
+				<div id="userButton" class="dropdown pull-right">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">Nome do aluno</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a tabindex="-1" href="#">EDITAR PERFIL</a>
+                        </li>
+                        <li>
+                            <a tabindex="-1" href="#">SAIR</a>
+                        </li>
+                    </ul>
+                </div>
+
 			</div>
 		</div>
+		
+		<div id="breadcrumb" class="container">
+            <ul>
+                <li>
+                    <a href="#">Página inicial</a>
+                </li>
+                <li>></li>
+                <li>
+                    <a href="#">Cursos</a>
+                </li>
+            </ul>
+		</div>
+		
+		<section id="main" class="container">
+            <h5 class="page-title">CURSOS EM ANDAMENTO</h5>
+            
+            <div class="couses-in-progress">
+                <div class="pie-chart" data-percent="73">
+                    <span>Java básico <br/> 30%</span>
+                </div>
+                <div class="pie-chart" data-percent="73"></div>
+            </div>
+            
+		</section>
+		
 
 	</body>
 
