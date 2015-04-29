@@ -130,6 +130,94 @@
                 <div class="pie-chart" data-percent="73"></div>
             </div>
             
+            <div id="calendar" class="col-md-6">
+            	<div class="year-bar">
+            		<button type="button" class="btn prev"><</button>
+            		<div class="year">2015</div>
+            		<button type="button" class="btn next">></button>
+            	</div>
+            	
+            	<div class="courses-list">
+            		<select>
+						<option>Java Básico</option>
+						<option>Java Intermediário</option>
+					</select>
+            	</div>
+            	
+            	<div class="months">
+            		
+            		<ul>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		<li class="col-md-3">
+	            			<a href="#">
+		            			<span>JAN</span>
+	            			</a>
+	            		</li>
+	            		
+	            		
+            		</ul>
+            		
+            		
+            	</div>
+            	
+            </div>
+            
+            
+            
 		</section>
 		
 

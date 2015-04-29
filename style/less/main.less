@@ -1,5 +1,8 @@
 @import '../../lib/bootstrap-3.3.4/less/bootstrap.less';
 
+
+@brand-primary: #008CCA;
+
 @font-size-base: 1.6em;
 
 @font-size-h1: 4em;
@@ -35,11 +38,9 @@ h4, .h4, h5, .h5, h6, .h6 {
 @dell-gray-dark: lighten(@dell-gray-base, -8%);
 @dell-gray-xdark: lighten(@dell-gray-base, -63%);
 
-
-@dell-blue-base: #008CCA;
-@dell-blue-ligth: lighten(@dell-blue-base, 5%);
-@dell-blue-dark: lighten(@dell-blue-base, -5%);
-@dell-blue-xdark: lighten(@dell-blue-base, -20%);
+@dell-blue-ligth: lighten(@brand-primary, 5%);
+@dell-blue-dark: lighten(@brand-primary, -5%);
+@dell-blue-xdark: lighten(@brand-primary, -20%);
 
 
 body{
@@ -88,7 +89,7 @@ a{
 
 
 #navigationBar{
-	background-color: @dell-blue-base;
+	background-color: @brand-primary;
 	
 	ul{
 		li{
@@ -134,7 +135,7 @@ a{
 			}
 			ul{
 				text-align: center;
-				background-color: @dell-blue-base;
+				background-color: @brand-primary;
 				padding: 4px;
 				li{
 					a{
@@ -164,9 +165,9 @@ a{
 section#main{
 
 	h5.page-title{
-		color: @dell-blue-base;
-		border-top: 1px solid @dell-blue-base;
-		border-bottom: 1px solid @dell-blue-base;
+		color: @brand-primary;
+		border-top: 1px solid @brand-primary;
+		border-bottom: 1px solid @brand-primary;
 		text-align: center;
 		display: table;
 		margin: 0 auto;
@@ -196,6 +197,66 @@ section#main{
 				padding: 0 20px
 		  	}
 		}
+	}
+	
+	#calendar{
+		
+		height: 300px;
+		
+		.year-bar{
+			background-color: @brand-primary;
+			text-align: center;
+			color: #fff;
+			overflow: hidden;
+			margin-bottom: 10px;
+			
+			button{
+				display: inline-block;
+				background-color: @dell-blue-ligth;
+			}
+			.year{
+				display: inline-block;
+			}
+			.prev{
+				float: left;
+			}
+			.next{
+				float: right;
+			}
+		}
+		
+		.courses-list{
+			select{
+				width: 100%;
+				background-color: transparent;
+				padding: 6px;
+				-webkit-appearance: none;
+				background: url(../../imgs/br_select.png) no-repeat right;
+				
+			}
+		}
+		
+		.months{
+			margin-left: -10px;
+			margin-right: -10px;
+			
+			li{
+				padding: 0;
+				a{
+					height: 100px;
+					margin: 10px;
+					background-color: @dell-gray-base;
+					border-bottom: 10px solid @dell-blue-xdark;
+					display: block;
+					
+					span{
+						
+					}
+				}
+				
+			}
+		}
+		
 	}
 	
 }
