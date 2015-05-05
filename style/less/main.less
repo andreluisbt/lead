@@ -2,18 +2,31 @@
 
 
 @brand-primary: #008CCA;
+	@brand-primary-dark: darken(@brand-primary, 10%);
+@brand-success: #89C251;
+	@brand-success-dark: darken(@brand-success, 10%);
+@brand-info: 	#5bc0de;
+	@brand-info-dark: darken(@brand-info, 10%);
+@brand-warning: #f0ad4e;
+	@brand-warning-dark: darken(@brand-warning, 10%);
+@brand-danger:  #DC5134;
+	@brand-danger-dark: darken(@brand-danger, 10%);
+@brand-purple:  #6F2586;
+	@brand-purple-dark: darken(@brand-purple, 10%);
 
 @font-size-base: 1.6em;
 
-@font-size-h1: 4em;
-@font-size-h2: 3em;
-@font-size-h3: 2.5em;
-@font-size-h4: 2em;
-@font-size-h5: 1.5em;
+@font-size-h1: 3em;
+@font-size-h2: 2.5em;
+@font-size-h3: 2em;
+@font-size-h4: 1.6em;
+@font-size-h5: 1.3em;
 @font-size-h6: 1em;
+
 
 h4, .h4, h5, .h5, h6, .h6 {
 	font-weight: normal;
+	font-family: @lead-font-family
 }
 
 @border-radius-base: 0;
@@ -22,26 +35,80 @@ h4, .h4, h5, .h5, h6, .h6 {
 
 .btn{
 	font-size: inherit;
+	&.btn-primary{
+		border-bottom: 5px solid @brand-primary-dark;
+	}
+	&.btn-success{
+		border-bottom: 5px solid @brand-success-dark;
+	}
+	&.btn-info{
+		border-bottom: 5px solid @brand-info-dark;
+	}
+	&.btn-warning{
+		border-bottom: 5px solid @brand-warning-dark;
+	}
+	&.btn-danger{
+		border-bottom: 5px solid @brand-danger-dark;
+	}
+	&.btn-purple{
+		color: #fff;
+		background-color: @brand-purple;
+		border-bottom: 5px solid @brand-purple-dark;
+		&:hover,
+		&:focus{
+			background-color: @brand-purple-dark;
+		}
+	}
 }
 
 .dropdown-menu{
 	font-size: inherit;
+	font-family: @lead-font-family;
 }
 
 
+.panel{
+	border: none;
+	box-shadow: none;
+	.panel-heading{
+		color: #fff;
+		text-align: center;
+		font-family: @lead-font-family;
+	}
+	
+	&.panel-primary{
+		.panel-heading{
+			background-color: @brand-primary;
+		}
+	}
+	&.panel-success{
+		.panel-heading{
+			background-color: @brand-success;
+		}
+	}
+	&.panel-info{
+		.panel-heading{
+			background-color: @brand-info;
+		}
+	}
+	&.panel-warning{
+		.panel-heading{
+			background-color: @brand-warning;
+		}
+	}
+	&.panel-danger{
+		.panel-heading{
+			background-color: @brand-danger;
+		}
+	}
+	&.panel-purple{
+		.panel-heading{
+			background-color: @brand-purple;
+		}
+	}
+}
+
 /********************/
-
-
-@dell-gray-base: #DEDEDE;
-@dell-gray-light: lighten(@dell-gray-base, 3%);
-@dell-gray-xlight: lighten(@dell-gray-base, 8%);
-@dell-gray-dark: lighten(@dell-gray-base, -8%);
-@dell-gray-xdark: lighten(@dell-gray-base, -63%);
-
-@dell-blue-ligth: lighten(@brand-primary, 5%);
-@dell-blue-dark: lighten(@brand-primary, -5%);
-@dell-blue-xdark: lighten(@brand-primary, -20%);
-
 
 @font-face {
   font-family: 'museo';
@@ -84,31 +151,23 @@ h4, .h4, h5, .h5, h6, .h6 {
   font-style: normal;
 }
 
+@lead-gray-base: #DEDEDE;
+@lead-gray-light: lighten(@lead-gray-base, 3%);
+@lead-gray-xlight: lighten(@lead-gray-base, 8%);
+@lead-gray-dark: lighten(@lead-gray-base, -8%);
+@lead-gray-xdark: lighten(@lead-gray-base, -45%);
 
-@font-face {
-  font-family: 'helveticaneue';
-  src: url('fonts/helveticaneue/HelveticaNeue-webfont.ttf');
-  src: url('fonts/helveticaneue/HelveticaNeue-webfont.eot?#iefix') format('embedded-opentype'),
-  url('fonts/helveticaneue/HelveticaNeue-webfont.woff') format('woff'),
-  url('fonts/helveticaneue/HelveticaNeue-webfont.ttf') format('truetype'),
-  url('fonts/helveticaneue/HelveticaNeue-webfont.svg#museobold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'helveticalight';
-  src: url('fonts/helveticalight/HelveticaNeueLTPro-Lt.ttf');
-  src: url('fonts/helveticalight/HelveticaNeueLTPro-Lt.eot?#iefix') format('embedded-opentype'),
-  url('fonts/helveticalight/HelveticaNeueLTPro-Lt.woff') format('woff'),
-  url('fonts/helveticalight/HelveticaNeueLTPro-Lt.ttf') format('truetype'),
-  url('fonts/helveticalight/HelveticaNeueLTPro-Lt#museobold') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
+@lead-blue-ligth: lighten(@brand-primary, 5%);
+@lead-blue-dark: lighten(@brand-primary, -5%);
+@lead-blue-xdark: lighten(@brand-primary, -20%);
+
+@lead-font-family: museoregular,Arial,sans-serif;
+
+
 
 body{
-	background: @dell-gray-xlight;
-	color: @dell-gray-xdark;
+	background: @lead-gray-xlight;
+	color: @lead-gray-xdark;
 }
 
 ul{
@@ -125,6 +184,9 @@ a{
 	color: inherit;
 }
 
+button{
+	transition: .3s;
+}
 
 
 #wrapPage{
@@ -134,17 +196,26 @@ a{
 
 #accessibilityBar{
 	margin-bottom: 10px;
+	font-family: @lead-font-family;
+
 	ul{
 		li{
 			display: inline-block;
 			margin-right: 5px; 
-			span{
-				font-size: 1.2em;
-				background-color: @dell-gray-dark;
-				padding: 0px 8px;
-				width: 30px;
+			span.key, a{
+				font-size: 1.1em;
+				background-color: @lead-gray-dark;
+				padding: 4px 0;
+				width: 34px;
 				display: inline-block;
 				text-align: center;
+			}
+		}
+		a{
+			&:hover,
+			&:focus{
+				color: inherit;
+				background-color: @lead-gray-base;
 			}
 		}
 	}
@@ -153,30 +224,74 @@ a{
 
 #navigationBar{
 	background-color: @brand-primary;
+	font-family: @lead-font-family;
+	padding: 8px 0;
+	margin: 0;
+	
+	.navbar-header{
+		.navbar-toggle{
+			.icon-bar{
+				background-color: #fff;
+			}
+		}
+	}
+	
 	
 	ul{
+		float: right;
 		li{
 			display: inline-block;
 			a{
 				color: #fff;
-				font-size: 1.2em;
-				padding: 30px 10px;
-				display: block;
-				
+				font-size: 1.05em;
+				margin-left: 10px;
+  				padding: 5px;
+				line-height: 75px;
+				border-bottom: 5px solid transparent;
 				&:hover,
 				&:focus{
-					background-color: @dell-blue-dark;
+					border-bottom: 5px solid #fff;
 				}
 				
 			}
 		}
 	}
+	
+	
+	@media (max-width: @screen-sm-max) {
+		img{
+			width: 120px;
+		}
+		ul{
+			li{
+				a{
+					line-height: 50px;
+				}
+			}
+		}
+	}
+	
+	@media (max-width: @screen-sm-min) {
+		ul{
+			float: none;
+			li{
+				display: block;
+				text-align: center;
+				a{
+					line-height: 50px;
+				}
+			}
+		}
+	}
+	
 }
 
 
 #userBar{
 	background-color: #fff;
+	font-family: @lead-font-family;
 	.container{
+		padding: 0;
 		>ul{
 			>li{
 				display: inline-block;
@@ -185,7 +300,7 @@ a{
 	  				display: block;
 					&:hover,
 					&:focus{
-						//background-color: @dell-blue-dark;
+						//background-color: @lead-blue-dark;
 					}
 				}
 			}
@@ -193,8 +308,22 @@ a{
 		
 		#userButton{
 			>a{
-				padding: 12px;
 	  			display: block;
+	  			
+				img{
+					width: 40px;
+					border-radius: 100px;
+					margin-right: 5px;
+				}
+	  			i{
+					line-height: 45px;
+					width: 40px;
+					margin-left: 10px;
+					text-align: center;
+					border-left: 1px solid @lead-gray-dark;
+					border-right: 1px solid @lead-gray-dark;
+	  			}
+	  			
 			}
 			ul{
 				text-align: center;
@@ -203,10 +332,10 @@ a{
 				li{
 					a{
 						color: #fff;
-						padding: 5px 40px;
+						padding: 5px 60px;
 						&:hover,
 						&:focus{
-							background-color: @dell-blue-xdark;
+							background-color: @lead-blue-xdark;
 						}
 					}
 				}
@@ -216,18 +345,27 @@ a{
 }
 
 #breadcrumb{
+	font-family: @lead-font-family;
 	margin-top: 30px;
   	font-size: 0.8em;
 	ul{
 		li{
 			display: inline-block;
+			i{
+				font-size: .9em;
+			}
 		}
 	}
 }
 
 section#main{
 
-	h5.page-title{
+	h1.page-title,
+	h2.page-title,
+	h3.page-title,
+	h4.page-title,
+	h5.page-title,
+	h6.page-title{
 		color: @brand-primary;
 		border-top: 1px solid @brand-primary;
 		border-bottom: 1px solid @brand-primary;
@@ -243,7 +381,7 @@ section#main{
 		
 		.pie-chart{
 			display: inline-block;
-	  		background-color: @dell-blue-dark;
+	  		background-color: @lead-blue-dark;
 	  		border-radius: 100px;
 			margin: 40px;
 			position: relative;
@@ -251,6 +389,7 @@ section#main{
 				margin: -10px;
 		  	}
 		  	span{
+		  		font-family: @lead-font-family;
 				position: absolute;
 				width: 100%;
 				text-align: center;
@@ -263,9 +402,8 @@ section#main{
 	}
 	
 	#calendar{
-		
-		height: 300px;
-		
+		margin-bottom: 25px;
+		overflow: hidden;
 		.year-bar{
 			background-color: @brand-primary;
 			text-align: center;
@@ -273,12 +411,15 @@ section#main{
 			overflow: hidden;
 			margin-bottom: 10px;
 			
-			button{
+			a{
 				display: inline-block;
-				background-color: @dell-blue-ligth;
+				background-color: @lead-blue-ligth;
 			}
 			.year{
 				display: inline-block;
+				font-family: @lead-font-family;
+				font-size: 1.2em;
+  				line-height: 36px;
 			}
 			.prev{
 				float: left;
@@ -308,8 +449,8 @@ section#main{
 				a{
 					height: 100px;
 					margin: 10px;
-					background-color: @dell-gray-base;
-					border-bottom: 10px solid @dell-blue-xdark;
+					background-color: @lead-gray-base;
+					border-bottom: 10px solid @lead-blue-xdark;
 					display: block;
 					
 					span{
@@ -321,6 +462,99 @@ section#main{
 		}
 		
 	}
+	
+	#inbox{
+		margin-bottom: 25px;
+		.table{
+			thead{
+				tr{
+					th{
+						font-family: @lead-font-family;
+						border: 1px solid @lead-gray-xdark !important;
+						font-weight: normal;
+						color: @lead-gray-xdark;
+					}
+				}
+			}
+			tbody{
+				tr{
+					td{
+						img{
+							border-radius: 100px;
+							width: 45px;
+						  	height: 45px;
+						}
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	
+	}
+	
+	#videoConference{
+		margin-bottom: 25px;
+		.panel{
+			background: none;
+			.panel-heading{
+				border-bottom: 10px solid @brand-success-dark;
+			}
+			.panel-body{
+				text-align: center;
+			}
+		}
+		
+		ul{
+			 margin: 30px 10px;
+			a{
+				text-decoration: underline !important;
+			}
+		}
+	}
+	
+	#grades{
+		margin-bottom: 25px;
+		.panel{
+			background: @lead-gray-light;
+			margin-bottom: 0;
+			.panel-heading{
+				border-bottom: 10px solid @brand-purple-dark;
+			}
+			.panel-body{
+				text-align: center;
+			}
+		}
+		
+		.courses-list{
+			select{
+				width: 100%;
+				background-color: transparent;
+				padding: 6px;
+				-webkit-appearance: none;
+				background: url(../../imgs/br_select.png) no-repeat right;
+				
+			}
+		}
+		
+		ul{
+			margin: 25px 5px;
+  			overflow: hidden;
+			li{
+				text-align: center;
+				font-size: .7em;
+				span{
+					  width: 100px;
+					  display: block;
+					  border-radius: 100px;
+					  background-color: @lead-gray-dark;
+					  line-height: 100px;
+					  font-size: 2.5em;
+					  margin: 10px auto;
+				}
+			}
+		}
+	}
+	
 	
 }
 
