@@ -24,6 +24,9 @@
 @font-size-h6: 1em;
 
 
+@icon-font-path: '../../lib/bootstrap-3.3.4/fonts/';
+
+
 h4, .h4, h5, .h5, h6, .h6 {
 	font-weight: normal;
 	font-family: @lead-font-family
@@ -228,6 +231,16 @@ button{
 	padding: 8px 0;
 	margin: 0;
 	
+	.fixed{
+		position: fixed;
+		top: 0;
+		z-index: 1000;
+	}
+	
+	img.logo{
+		float: left;
+	}
+	
 	.navbar-header{
 		.navbar-toggle{
 			.icon-bar{
@@ -259,7 +272,7 @@ button{
 	
 	
 	@media (max-width: @screen-sm-max) {
-		img{
+		img.logo{
 			width: 120px;
 		}
 		ul{
@@ -487,8 +500,8 @@ section#main{
 				background-color: transparent;
 				padding: 6px;
 				-webkit-appearance: none;
+				-moz-appearance: none;
 				background: url(../../imgs/br_select.png) no-repeat right;
-				
 			}
 		}
 		
@@ -583,6 +596,7 @@ section#main{
 				background-color: transparent;
 				padding: 6px;
 				-webkit-appearance: none;
+				-moz-appearance: none;
 				background: url(../../imgs/br_select.png) no-repeat right;
 				
 			}
@@ -605,6 +619,48 @@ section#main{
 				}
 			}
 		}
+	}
+	
+	#products{
+		
+		border-bottom: 20px solid #fff;
+		margin-bottom: 50px;
+		
+		>h5{
+			text-align: right;
+		}
+		
+		.carousel{
+			background-color: @lead-gray-base;
+			padding: 50px;
+			.item{
+				.product-img{
+					text-align: center;
+					padding: 0;
+				}
+				.product-desc{
+					h5{
+						color: @brand-primary;
+					}
+					.btn{
+						margin: 10px 0; 
+					}
+				}
+			}
+			.carousel-control{
+				width: 5%;
+				background: none;
+				i{
+					position: absolute;
+					top: 50%;
+					color: #000;
+				}
+				&.left{
+					left: -10px;
+				}
+			}
+		}
+		
 	}
 	
 	

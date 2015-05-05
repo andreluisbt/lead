@@ -41,7 +41,7 @@
     <div class="container">
         
         <div class="navbar-header">
-			<img src="imgs/logo-dell.png" class="visible-xs pull-left" alt="Accessible learning">
+			<img src="imgs/logo-dell.png" class="logo visible-xs pull-left" alt="Accessible learning">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -50,7 +50,7 @@
 		</div>
         
         <div class="collapse navbar-collapse">
-            <img src="imgs/logo-dell.png" class="hidden-xs" alt="Accessible learning"> 
+            <img src="imgs/logo-dell.png" class="logo hidden-xs" alt="Accessible learning"> 
             <ul>
                 <li>
                     <a href="#">Cursos</a>
