@@ -1,4 +1,8 @@
 $("document").ready(function(){
+	
+	
+
+
 
 	$('.pie-chart').easyPieChart({
 		barColor: '#009ee3',

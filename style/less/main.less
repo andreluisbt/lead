@@ -157,7 +157,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 @lead-gray-dark: lighten(@lead-gray-base, -8%);
 @lead-gray-xdark: lighten(@lead-gray-base, -45%);
 
-@lead-blue-ligth: lighten(@brand-primary, 5%);
+@lead-blue-light: lighten(@brand-primary, 5%);
 @lead-blue-dark: lighten(@brand-primary, -5%);
 @lead-blue-xdark: lighten(@brand-primary, -20%);
 
@@ -268,6 +268,49 @@ button{
 					line-height: 50px;
 				}
 			}
+			&.user-bar{
+				border-top: 2px solid #fff;
+       			li.user-item{
+	       			background-color: @lead-blue-light;
+					padding: 10px;
+					text-align: left;
+					color: #fff;
+					
+					ul{
+						li{
+							display: inline-block;
+							a{
+								border: none;
+								border-radius: 100px;
+								padding: 8px;
+								&:hover,
+								&:focus{
+									background-color: @brand-primary;
+									
+								}
+								i{
+									width: 20px;
+								}
+							}
+							&.exit{
+								a{
+									&:hover,
+									&:focus{
+										background-color: @brand-danger;
+									}
+								}
+							}
+						}
+					}
+					
+       			}
+       			img{
+       				width: 55px;
+       				border-radius: 100px;
+       				border: 1px solid #fff;
+       				padding: 2px;
+       			}
+			}
 		}
 	}
 	
@@ -284,6 +327,15 @@ button{
 		}
 	}
 	
+}
+
+footer{
+  background-color: @brand-primary;
+  font-family: @lead-font-family;
+  color: #fff;
+  padding: 15px;
+  font-size: .9em;
+  text-align: right;
 }
 
 
@@ -413,7 +465,7 @@ section#main{
 			
 			a{
 				display: inline-block;
-				background-color: @lead-blue-ligth;
+				background-color: @lead-blue-light;
 			}
 			.year{
 				display: inline-block;
