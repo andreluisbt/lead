@@ -170,6 +170,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 body{
 	background: @lead-gray-xlight;
 	color: @lead-gray-xdark;
+	font-size: 16px;
 }
 
 ul{
@@ -208,7 +209,7 @@ button{
 				font-size: 1.1em;
 				background-color: @lead-gray-dark;
 				padding: 4px 0;
-				width: 34px;
+				min-width: 34px;
 				display: inline-block;
 				text-align: center;
 			}
@@ -221,6 +222,10 @@ button{
 			}
 		}
 	}
+	
+	&.margined-bottom{
+		margin-bottom: 103px;	
+	}
 }
 
 
@@ -231,9 +236,10 @@ button{
 	margin: 0;
 	border: none;
 	
-	.fixed{
+	&.fixed{
 		position: fixed;
 		top: 0;
+		width: 100%;
 		z-index: 1000;
 	}
 	
@@ -345,16 +351,6 @@ button{
 	
 }
 
-footer{
-  background-color: @brand-primary;
-  font-family: @lead-font-family;
-  color: #fff;
-  padding: 15px;
-  font-size: .9em;
-  text-align: right;
-}
-
-
 #userBar{
 	background-color: #fff;
 	font-family: @lead-font-family;
@@ -410,6 +406,7 @@ footer{
 			}
 		}
 	}
+	
 }
 
 #breadcrumb{
@@ -690,6 +687,13 @@ section#main{
 		
 	}
 	
-	
 }
 
+footer {
+	background-color: @brand-primary;
+	font-family: @lead-font-family;
+	color: #fff;
+	padding: 15px;
+	font-size: .9em;
+	text-align: right;
+}

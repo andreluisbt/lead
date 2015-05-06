@@ -24,12 +24,17 @@
             </a>
 		</li>
 		<li>
-			<a href="#">
+			<a id="btFontIncrease" href="#">
                 A+
             </a>
 		</li>
 		<li>
-			<a href="#">
+			<a id="btFontReset" href="#">
+                A
+            </a>
+		</li>
+		<li>
+			<a id="btFontDecrease" href="#">
                 A-
             </a>
 		</li>

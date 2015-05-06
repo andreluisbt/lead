@@ -3,7 +3,16 @@ $("document").ready(function(){
 	$('#btHighContrast').click(function(e){
 		$('body').toggleClass('high-contrast');
 	});
-
+	
+	$(window).scroll(function () {
+		if($(this).scrollTop() > 50){
+			$('header #navigationBar').addClass('fixed');
+			$('header #accessibilityBar').addClass('margined-bottom');
+		}else{
+			$('header #navigationBar').removeClass('fixed');
+			$('header #accessibilityBar').removeClass('margined-bottom');
+		}
+	});
 
 
 	$('.pie-chart').easyPieChart({
@@ -32,6 +41,29 @@ $("document").ready(function(){
 		calendarYear++;
 		$('#calendar .year-bar .year').html(calendarYear);
 	});
+	
+	/*
+	 * Letter size
+	**/
+	initFontSize = 16;
+	$('#accessibilityBar #btFontIncrease').click(function(e){
+		e.preventDefault();
+		initFontSize++;
+		$('body').css('font-size', initFontSize);
+	});
+	
+	$('#accessibilityBar #btFontReset').click(function(e){
+		e.preventDefault();
+		initFontSize = 16;
+		$('body').css('font-size', '');
+	});
+	
+	$('#accessibilityBar #btFontDecrease').click(function(e){
+		e.preventDefault();
+		initFontSize--;
+		$('body').css('font-size', initFontSize);
+	});
+	
 	
 	
 });
