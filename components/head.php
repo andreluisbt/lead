@@ -9,5 +9,6 @@
 
 <script type="text/javascript" src="js/main.js"></script>
 <link rel="stylesheet/less" type="text/css" href="style/less/main.less" />
+<link rel="stylesheet/less" type="text/css" href="style/less/high_contrast.less" />
 
 <script type="text/javascript" src="lib/less-2.5.0/less.min.js"></script>

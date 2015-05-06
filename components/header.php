@@ -19,18 +19,18 @@
 	</ul>
 	<ul class="pull-right">
 		<li>
-            <a href="#">
+            <a id="btHighContrast" href="#">
 				<i class="fa fa-adjust"></i>
             </a>
 		</li>
 		<li>
 			<a href="#">
-                <img src="imgs/font-increase.png" alt="">
+                A+
             </a>
 		</li>
 		<li>
 			<a href="#">
-                <img src="imgs/font-decrease.png" alt="">
+                A-
             </a>
 		</li>
 	</ul>

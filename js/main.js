@@ -1,6 +1,8 @@
 $("document").ready(function(){
 	
-	
+	$('#btHighContrast').click(function(e){
+		$('body').toggleClass('high-contrast');
+	});
 
 
 
@@ -13,4 +15,23 @@ $("document").ready(function(){
 		lineCap: 'square',
 		lineWidth: 25,
 	});
+	
+	
+	/*
+	 * Calendar
+	**/
+	calendarYear = 2015;
+	$('#calendar .prev').click(function(e){
+		e.preventDefault();
+		calendarYear--;
+		$('#calendar .year-bar .year').html(calendarYear);
+	});
+	
+	$('#calendar .next').click(function(e){
+		e.preventDefault();
+		calendarYear++;
+		$('#calendar .year-bar .year').html(calendarYear);
+	});
+	
+	
 });

@@ -1,6 +1,5 @@
 @import '../../lib/bootstrap-3.3.4/less/bootstrap.less';
 
-
 @brand-primary: #008CCA;
 	@brand-primary-dark: darken(@brand-primary, 10%);
 @brand-success: #89C251;
@@ -230,6 +229,7 @@ button{
 	font-family: @lead-font-family;
 	padding: 8px 0;
 	margin: 0;
+	border: none;
 	
 	.fixed{
 		position: fixed;
@@ -248,7 +248,6 @@ button{
 			}
 		}
 	}
-	
 	
 	ul{
 		float: right;
@@ -328,6 +327,10 @@ button{
 	}
 	
 	@media (max-width: @screen-sm-min) {
+		.navbar-collapse{
+			margin-top: 8px;
+		}
+	
 		ul{
 			float: none;
 			li{
@@ -511,15 +514,39 @@ section#main{
 			
 			li{
 				padding: 0;
-				a{
+				
+				>a,
+				>div{
 					height: 100px;
 					margin: 10px;
 					background-color: @lead-gray-base;
 					border-bottom: 10px solid @lead-blue-xdark;
 					display: block;
-					
+					font-size: .7em;
+					text-align: center;
+				
+					div{
+						font-size: 1.5em;
+						text-align: left;
+						padding: 0 10px;
+					}
+				}
+				>div{
+					background-color: @lead-gray-base;
+				}
+				>a{
+					background-color: @brand-primary;
+					color: #fff;
 					span{
-						
+						margin: 0 auto 5px auto;
+						display: block;
+						width: 35px;
+						line-height: 35px;
+						background: @lead-blue-xdark;
+						text-align: center;
+						vertical-align: middle;
+						border-radius: 100px;
+						font-size: 2em;
 					}
 				}
 				

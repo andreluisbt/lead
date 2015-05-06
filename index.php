@@ -1,20 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UTF-8">
-		
-		<script type="text/javascript" src="lib/jquery-2.1.3/jquery-2.1.3.min.js"></script>
-		<script type="text/javascript" src="lib/bootstrap-3.3.4/dist/js/bootstrap.min.js"></script>
-		
-		<link rel="stylesheet" href="lib/font-awesome-4.3.0/css/font-awesome.min.css">
-		
-		<script type="text/javascript" src="lib/easy-pie-chart-2.1.6/dist/jquery.easypiechart.js"></script>
-		
-		<script type="text/javascript" src="js/main.js"></script>
-		<link rel="stylesheet/less" type="text/css" href="style/less/main.less" />
-		
-		<script type="text/javascript" src="lib/less-2.5.0/less.min.js"></script>
-		
+		<?php include_once 'components/head.php';?>
 		<title>Página do aluno</title>
 	</head>
 
@@ -24,7 +11,6 @@
 			<header>
 				<?php include_once 'components/header.php';?>
 			</header>
-			
 			
 			<section id="main" class="container">
 	            <h4 class="page-title">CURSOS EM ANDAMENTO</h4>
@@ -59,66 +45,71 @@
 	                <div class="months">
 	                    
 	                    <ul>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+	                        <li class="col-xs-6 col-sm-4 col-md-3">
+                                <a href="#">
+                                    <div>JAN</div>
+                                    <span>5</span>
+                                    COMPROMISSOS
+                                </a>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
 	                        <li class="col-xs-6 col-sm-4 col-md-3">
 	                            <a href="#">
-	                                <span>JAN</span>
+	                                <div>JAN</div>
+	                                <span>5</span>
+	                                COMPROMISSOS
 	                            </a>
 	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <span>JAN</span>
-	                            </a>
-	                        </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+                            <li class="col-xs-6 col-sm-4 col-md-3">
+                                <div>
+                                    <div>JAN</div>
+                                </div>
+                            </li>
+                            
 	                    </ul>
 	                </div>
 	            </div>

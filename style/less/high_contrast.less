@@ -1,0 +1,122 @@
+
+@lead-yellow: #ffff00;
+
+.high-contrast{
+	background-color: #000 !important;	
+	
+	*{
+		color: #fff !important;
+		background-color: transparent !important;
+		border-color: #fff !important; 
+	}
+	
+	a, 
+	button{
+		&:hover,
+		&:focus{
+			color: @lead-yellow !important;
+			border-color: @lead-yellow !important;
+			
+			i{
+				color: @lead-yellow !important;
+			}
+		}
+	}
+	
+	
+	#accessibilityBar{
+		ul{
+			li{
+				span.key, a{
+					border: 1px solid #fff;
+				}
+			}
+		}
+	}
+	
+	#navigationBar{
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		
+		.navbar-header{
+			.navbar-toggle{
+				.icon-bar{
+					background-color: #fff !important;
+				}
+				&:hover,
+				&:focus{
+					.icon-bar{
+						background-color: @lead-yellow !important;
+					}
+				}
+			}
+		}
+		
+		ul{
+			li{
+				a{
+					border-color: #000 !important;
+					&:hover,
+					&:focus{
+						border-color: @lead-yellow !important;
+					}
+				}
+			}
+			&.user-bar{
+					li.user-item{
+						a{
+							border: 1px solid #fff !important;
+							&:hover,
+							&:focus{
+								border-color: @lead-yellow !important;
+							}
+						}
+					}
+				}
+		}
+	}
+	#userBar{
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+	}
+	
+	#calendar{
+		.year-bar{
+			border: 1px solid #fff;
+		}
+		.months{
+			li{
+				>div,
+				>a{
+					border: 1px solid #fff;
+					span{
+						border: 1px solid #fff;
+					}
+					
+					&:hover,
+					&:focus{
+						border-color: @lead-yellow !important;
+						div{
+							color: @lead-yellow !important;
+						}
+						span{
+							color: @lead-yellow !important;
+							border-color: @lead-yellow !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	#grades{
+		ul{
+			li{
+				span{
+					border: 1px solid #fff;
+				}
+			}
+		}
+	}
+	
+}
