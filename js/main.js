@@ -1,7 +1,36 @@
 $("document").ready(function(){
 	
+	preload = '<div class="preload">'+
+				'<span class="bar bar-1"></span>'+
+				'<span class="bar bar-2"></span>'+
+				'<span class="bar bar-3"></span>'+
+			'</div>';
+	
+	
+	
 	$('#btHighContrast').click(function(e){
 		$('body').toggleClass('high-contrast');
+		
+		if($('body').hasClass('high-contrast')){
+			$('.pie-chart').each(function(){
+				var percent = $(this).data('percent');
+				var pieChart = $(this).data('easyPieChart');
+				
+				pieChart.options.barColor = "#ffff00";
+				pieChart.update(percent);
+			});
+		}else{
+			$('.pie-chart').each(function(){
+				var percent = $(this).data('percent');
+				var pieChart = $(this).data('easyPieChart');
+				
+				pieChart.options.barColor = "#009ee3";
+				pieChart.update(percent);
+			});
+		}
+		
+		
+		
 	});
 	
 	$(window).scroll(function () {
@@ -27,22 +56,6 @@ $("document").ready(function(){
 	
 	
 	/*
-	 * Calendar
-	**/
-	calendarYear = 2015;
-	$('#calendar .prev').click(function(e){
-		e.preventDefault();
-		calendarYear--;
-		$('#calendar .year-bar .year').html(calendarYear);
-	});
-	
-	$('#calendar .next').click(function(e){
-		e.preventDefault();
-		calendarYear++;
-		$('#calendar .year-bar .year').html(calendarYear);
-	});
-	
-	/*
 	 * Letter size
 	**/
 	initFontSize = 16;
@@ -63,6 +76,65 @@ $("document").ready(function(){
 		initFontSize--;
 		$('body').css('font-size', initFontSize);
 	});
+	
+	
+	
+	/*
+	 * Calendar
+	**/
+	calendarYear = 2015;
+	$('#calendar .prev').click(function(e){
+		e.preventDefault();
+		calendarYear--;
+		$('#calendar .year-bar .year').html(calendarYear);
+		$('#calendar .courses-list select').val(0);
+	});
+	
+	$('#calendar .next').click(function(e){
+		e.preventDefault();
+		calendarYear++;
+		$('#calendar .year-bar .year').html(calendarYear);
+		$('#calendar .courses-list select').val(0);
+	});
+	
+	$('#calendar .courses-list select').change(function(e){
+		var courseId = $(this).val();
+		
+		if($(this).val() > 0){
+			$('#calendar .months').html(preload);
+			$.ajax({
+				type: 'post',
+				dataType: 'html',
+				url: 'actions/load_calendar.php',
+				data: {courseId: courseId},
+				success: function(data){
+					$('#calendar .months').html(data);
+				}
+			});
+		}
+	});
+	
+	
+	/*
+	 * Grades
+	**/
+	$('#grades .courses-list select').change(function(e){
+		var courseId = $(this).val();
+		
+		if($(this).val() > 0){
+			$('#grades .grade-description').html(preload);
+			$.ajax({
+				type: 'post',
+				dataType: 'html',
+				url: 'actions/load_grades.php',
+				data: {courseId: courseId},
+				success: function(data){
+					$('#grades .grade-description').html(data);
+				}
+			});
+		}
+	});
+	
 	
 	
 	

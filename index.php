@@ -37,8 +37,9 @@
 	                
 	                <div class="courses-list">
 	                    <select>
-	                        <option>Java Básico</option>
-	                        <option>Java Intermediário</option>
+	                        <option value="0">Selecione um curso</option>
+	                        <option value="1">Java Básico</option>
+	                        <option value="2">Java Intermediário</option>
 	                    </select>
 	                </div>
 	                
@@ -202,24 +203,28 @@
 	                        
 	                        <div class="courses-list">
 	                            <select>
-	                                <option>Java Básico</option>
-	                                <option>Java Intermediário</option>
-	                            </select>
+			                        <option value="0">Selecione um curso</option>
+			                        <option value="1">Java Básico</option>
+			                        <option value="2">Java Intermediário</option>
+			                    </select>
 	                        </div>
-	                        <ul>
-	                            <li class="col-sm-4 col-md-4">
-	                                <span>8.6</span>
-	                                MÉDIA DO CURSO
-	                            </li>
-	                            <li class="col-sm-4 col-md-4">
-	                                <span>8.6</span>
-	                                MÉDIA DO MÓDULO
-	                            </li>
-	                            <li class="col-sm-4 col-md-4">
-	                                <span>8.6</span>
-	                                NOTA DA AULA
-	                            </li>
-	                        </ul>
+	                        
+	                        <div class="grade-description">
+		                        <ul>
+		                            <li class="col-sm-4 col-md-4">
+		                                <span>8.6</span>
+		                                MÉDIA DO CURSO
+		                            </li>
+		                            <li class="col-sm-4 col-md-4">
+		                                <span>8.6</span>
+		                                MÉDIA DO MÓDULO
+		                            </li>
+		                            <li class="col-sm-4 col-md-4">
+		                                <span>8.6</span>
+		                                NOTA DA AULA
+		                            </li>
+		                        </ul>
+							</div>
 	                    </div>
 	                </div>
 	                <button type="button" class="btn btn-purple btn-block">CONSULTAR</button>

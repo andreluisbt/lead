@@ -112,6 +112,42 @@ h4, .h4, h5, .h5, h6, .h6 {
 
 /********************/
 
+.preload{
+	text-align: center;
+	.bar{
+		width: 6px;
+		height: 8px;
+		background-color: #232D33;
+		display: inline-block;
+		-webkit-animation: preload 0.8s linear infinite;
+		margin-left: 1px;
+		margin-right: 1px;
+		
+		&.bar-2{
+			-webkit-animation-delay: 0.266s;
+		}
+		&.bar-3{
+			-webkit-animation-delay: 0.532s;
+		}
+	}
+	@-webkit-keyframes preload{
+		0%{ -webkit-transform: scaleY(1);}
+		50%{ -webkit-transform: scaleY(3);}
+		100%{ -webkit-transform: scaleY(1);}
+	}
+	@-moz-keyframes preload{
+		0%{ -moz-transform: scaleY(1);}
+		50%{ -moz-transform: scaleY(3);}
+		100%{ -moz-transform: scaleY(1);}
+	}
+	@-ms-keyframes preload{
+		0%{ -ms-transform: scaleY(1);}
+		50%{ -ms-transform: scaleY(3);}
+		100%{ -ms-transform: scaleY(1);}
+	}
+}
+
+
 @font-face {
   font-family: 'museo';
   src: url('../../fonts/museo300/museosans-300-webfont.ttf');
@@ -509,6 +545,10 @@ section#main{
 			margin-left: -10px;
 			margin-right: -10px;
 			
+			.preload{
+				margin-top: 40px;
+			}
+			
 			li{
 				padding: 0;
 				
@@ -626,22 +666,30 @@ section#main{
 			}
 		}
 		
-		ul{
-			margin: 25px 5px;
-  			overflow: hidden;
-			li{
-				text-align: center;
-				font-size: .7em;
-				span{
-					  width: 100px;
-					  display: block;
-					  border-radius: 100px;
-					  background-color: @lead-gray-dark;
-					  line-height: 100px;
-					  font-size: 2.5em;
-					  margin: 10px auto;
+		.grade-description{
+			
+			.preload{
+				margin-top: 40px;
+				margin-bottom: 40px;
+			}
+			ul{
+				margin: 25px 5px;
+	  			overflow: hidden;
+				li{
+					text-align: center;
+					font-size: .7em;
+					span{
+						  width: 100px;
+						  display: block;
+						  border-radius: 100px;
+						  background-color: @lead-gray-dark;
+						  line-height: 100px;
+						  font-size: 2.5em;
+						  margin: 10px auto;
+					}
 				}
 			}
+			
 		}
 	}
 	
