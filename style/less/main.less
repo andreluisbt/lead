@@ -117,7 +117,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 	.bar{
 		width: 6px;
 		height: 8px;
-		background-color: #232D33;
+		background-color: @lead-gray-xdark;
 		display: inline-block;
 		-webkit-animation: preload 0.8s linear infinite;
 		margin-left: 1px;
@@ -494,10 +494,12 @@ section#main{
 				position: absolute;
 				width: 100%;
 				text-align: center;
-				top: 35%;
+				top: 50%;
 				font-size: 22px;
 				color: #fff;
-				padding: 0 20px
+				padding: 0 20px;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
 		  	}
 		}
 	}

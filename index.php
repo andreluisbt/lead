@@ -17,10 +17,10 @@
 	            
 	            <div class="couses-in-progress">
 	                <div class="pie-chart" data-percent="73">
-	                    <span>Java básico <br/> 30%</span>
+	                    <span>Java básico <br/> 73%</span>
 	                </div>
-	                <div class="pie-chart" data-percent="73">
-	                    <span>Java básico <br/> 30%</span>
+	                <div class="pie-chart" data-percent="57">
+	                    <span>Java Intermediário <br/> 57%</span>
 	                </div>
 	            </div>
             
