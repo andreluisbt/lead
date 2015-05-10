@@ -18,12 +18,16 @@
 	            <h4 class="page-title">CURSOS EM ANDAMENTO</h4>
 	            
 	            <div class="couses-in-progress">
-	                <div class="pie-chart" data-percent="73">
-	                    <span>Java básico <br/> 73%</span>
-	                </div>
-	                <div class="pie-chart" data-percent="57">
-	                    <span>Java Intermediário <br/> 57%</span>
-	                </div>
+	                <a href="lessons.php">
+    	                <div class="pie-chart" data-percent="73">
+    	                    <span>Java básico <br/> 73%</span>
+    	                </div>
+	                </a>
+	                <a href="lessons.php">
+    	                <div class="pie-chart" data-percent="57">
+    	                    <span>Java Intermediário <br/> 57%</span>
+    	                </div>
+    	            </a>
 	            </div>
             
 	            <div id="calendar" class="col-md-6">
