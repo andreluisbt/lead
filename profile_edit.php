@@ -23,6 +23,7 @@
 	            
                 <form>
                     <div class="col-md-6 user-video">
+                        <label for="firstName">Sua apresentação em libras</label>
                         <video src="http://www.w3schools.com/tags/movie.mp4" controls></video>
                         <input type="file" id="videoLibras" name="video_libras">
                         <button type="button" class="btn btn-primary btn-block">SELECIONAR ARQUIVO</button>
@@ -39,6 +40,7 @@
                         <label for="cpf">CPF *</label>
                         <input type="text" id="cpf" name="cpf" class="form-control" data-mask="000.000.000-00" placeholder="999.999.999-99">
                     </div>
+                    <div class="clearfix"></div>
                     <div class="form-group col-md-6">
                         <label for="rg">RG</label>
                         <input type="text" id="rg" name="rg" class="form-control" placeholder="RG">
@@ -143,9 +145,9 @@
                         <label for="profilePicDescription">Descrição da imagem do perfil</label>
                         <textarea id="profilePicDescription" name="profile_pic_description" class="form-control" placeholder="Descrição da imagem do perfil"></textarea>
                     </div>
-                    
-                    <button type="submit" class="btn btn-primary btn-block">Salvar</button>
-                    
+                    <div class="form-group col-md-12">
+                        <button type="submit" class="btn btn-primary btn-block">Salvar</button>
+                    </div>
 				</form>
 	            
             </section>

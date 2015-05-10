@@ -125,6 +125,12 @@ label{
 	font-weight: normal;
 }
 
+.form-control-static{
+	border-bottom: 2px solid @lead-gray-dark;
+	min-height: inherit;
+	color: @lead-gray-dark;
+}
+
 /********************/
 
 .preload{
@@ -422,14 +428,16 @@ button{
 		}
 		
 		#userButton{
-			>a{
-	  			display: block;
-	  			
+			#userProfileButton{
+				display: inline-block;
 				img{
 					width: 40px;
 					border-radius: 100px;
 					margin-right: 5px;
 				}
+			}
+			#userDownButton{
+	  			display: inline-block;
 	  			i{
 					line-height: 45px;
 					width: 40px;
@@ -738,7 +746,7 @@ section#main{
 	}
 	
 	.user-video{
-		text-align: center;
+		//text-align: center;
 		max-width: 370px;
 		margin: 0 auto;
 		margin-bottom: 25px;
@@ -746,16 +754,20 @@ section#main{
 		@media (min-width: @screen-sm-max) {
 			float: right;
 		}
+		label{
+			
+		}
 		video{
 			width: 100%;
-			height: 190px;
+			height: 163px;
+			background: #000;
 		}
 		button{
 			margin-top: 6px;
 		}
 	}
 	
-	#videolibras{
+	#videoLibras{
 		display: none;
 	}
 }
@@ -800,9 +812,7 @@ section#main{
 			}
 		}
 	}
-	
 }
-
 
 footer {
 	background-color: @brand-primary;

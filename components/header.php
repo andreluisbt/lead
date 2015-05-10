@@ -82,10 +82,12 @@
 	            </li>
 	            <li class="user-item">
 					<img src="imgs/user.jpg">
-	                Nome do aluno
+					<a href="profile.php">
+    	                Nome do aluno
+					</a>
 	                <ul class="pull-right">
 	                	<li>
-	                		<a href="#">
+	                		<a href="profile_edit.php">
 	                			<i class="fa fa-pencil"></i>
 	                		</a>
 	                	</li>
@@ -112,16 +114,18 @@
             </li>
         </ul>
         <div id="userButton" class="dropdown pull-right">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+            <a id="userProfileButton" href="profile.php">
                 <img src="imgs/user.jpg">
                 Nome do aluno
+            </a>
+            <a id="userDownButton" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
                 <span>
                     <i class="fa fa-angle-double-down"></i>
                 </span>
             </a>
             <ul class="dropdown-menu">
                 <li>
-                    <a tabindex="-1" href="#">EDITAR PERFIL</a>
+                    <a tabindex="-1" href="profile_edit.php">EDITAR PERFIL</a>
                 </li>
                 <li>
                     <a tabindex="-1" href="#">SAIR</a>
