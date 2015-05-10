@@ -126,9 +126,9 @@ label{
 }
 
 .form-control-static{
-	border-bottom: 2px solid @lead-gray-dark;
+	border-bottom: 2px solid darken(@lead-gray-dark, 10%);
 	min-height: inherit;
-	color: @lead-gray-dark;
+	color: darken(@lead-gray-dark, 15%);
 }
 
 /********************/
@@ -210,6 +210,13 @@ label{
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'audiowide';
+  src: url('../../fonts/audiowide_regular/Audiowide-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @lead-gray-base: #DEDEDE;
 @lead-gray-light: lighten(@lead-gray-base, 3%);
 @lead-gray-xlight: lighten(@lead-gray-base, 8%);
@@ -221,6 +228,7 @@ label{
 @lead-blue-xdark: lighten(@brand-primary, -20%);
 
 @lead-font-family: museoregular,Arial,sans-serif;
+@lead-font-family-aux: 'audiowide';
 
 
 
@@ -276,6 +284,12 @@ button{
 			&:focus{
 				color: inherit;
 				background-color: @lead-gray-base;
+			}
+			
+			&#btFontIncrease,
+			&#btFontReset,
+			&#btFontDecrease{
+				font-family: @lead-font-family-aux;
 			}
 		}
 	}
@@ -584,7 +598,9 @@ section#main{
 				>div{
 					height: 100px;
 					margin: 10px;
+					font-family: @lead-font-family-aux;
 					background-color: @lead-gray-base;
+					color: @lead-blue-xdark;
 					border-bottom: 10px solid @lead-blue-xdark;
 					display: block;
 					font-size: .7em;
@@ -601,6 +617,7 @@ section#main{
 				}
 				>a{
 					background-color: @brand-primary;
+					font-family: @lead-font-family-aux;
 					color: #fff;
 					span{
 						margin: 0 auto 5px auto;
