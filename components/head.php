@@ -7,6 +7,8 @@
 
 <script type="text/javascript" src="lib/easy-pie-chart-2.1.6/dist/jquery.easypiechart.js"></script>
 
+<script type="text/javascript" src="lib/jquery-mask/dist/jquery.mask.min.js"></script>
+
 <script type="text/javascript" src="js/main.js"></script>
 <link rel="stylesheet/less" type="text/css" href="style/less/main.less" />
 <link rel="stylesheet/less" type="text/css" href="style/less/high_contrast.less" />
