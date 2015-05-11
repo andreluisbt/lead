@@ -482,6 +482,45 @@ button{
 	
 }
 
+#oasBar{
+	background-color: @lead-blue-dark;
+	.navbar-header{
+		h6{
+			color: #fff;
+			padding-left: 25px;
+		}
+		.navbar-toggle{
+			.icon-bar{
+				background-color: #fff;
+			}
+		}
+	}
+	
+	ul{
+		li{
+			display: inline-block;
+			a{
+				color: #fff;
+				font-size: 0.9em;
+  				padding: 12px;
+				display: block;
+				&:hover,
+				&:focus{
+					background-color: @lead-blue-xdark;
+				}
+				
+			}
+		}
+		
+		@media (max-width: @screen-sm-min) {
+			li{
+				display: block;
+			}
+		}
+		
+	}
+}
+
 #breadcrumb{
 	font-family: @lead-font-family;
 	margin-top: 30px;

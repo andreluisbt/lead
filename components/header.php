@@ -47,7 +47,7 @@
         
         <div class="navbar-header">
 			<img src="imgs/logo-dell.png" class="logo visible-xs pull-left" alt="Accessible learning">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationBar .navbar-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -135,6 +135,76 @@
 
     </div>
 </div>
+
+<div id="oasBar">
+	
+	<div class="container">
+		<div class="navbar-header">
+			<h6 class="visible-xs pull-left">Objetos de aprendizagem da aula</h6>
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#oasBar .navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		
+		<div class="collapse navbar-collapse">
+			<ul>
+				<li>
+					<a href="#">
+						<i class="fa fa-list"></i>
+						Lista de aulas
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-laptop"></i>
+						Aula 01
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-desktop"></i>
+						CDD Aula 01
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-video-camera"></i>
+						Vídeoaula 1a
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-video-camera"></i>
+						Vídeoaula 1b
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-clipboard"></i>
+						Fórum Aula 01
+					</a>
+				</li>
+				
+				
+				<li>
+					<a href="#">
+						<i class="fa fa-files-o"></i>
+						Exercicio Aula 01
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa fa-pencil-square-o"></i>
+						Avaliação Aula 01
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
 
 <div id="breadcrumb" class="container">
     <ul>
