@@ -536,7 +536,8 @@ button{
 }
 
 section#main{
-
+	min-height: 200px;
+	
 	h1.page-title,
 	h2.page-title,
 	h3.page-title,
@@ -850,31 +851,36 @@ section#main{
 				background-color: #fff;
 				margin-bottom: 10px;
 				overflow: hidden;
-				.number{
-					display: inline-block;
-					padding: 7px;
-					//width: 100px;
-					text-align: center;
-					background-color: @lead-gray-base;
-				}
-				.title{
-					display: inline-block;
-					padding-left: 10px;
-					line-height: 36px;
-				}
-				.status{
-					display: inline-block;
-					float: right;
-					line-height: 36px;
-					//width: 150px;
-					padding-right: 0;
-					text-align: center;
-					background-color: @lead-gray-base;
-					i{
+				
+				a{
+					display: block;
+				
+					.number{
+						display: inline-block;
+						padding: 7px;
+						//width: 100px;
+						text-align: center;
+						background-color: @lead-gray-base;
+					}
+					.title{
+						display: inline-block;
+						padding-left: 10px;
+						line-height: 36px;
+					}
+					.status{
+						display: inline-block;
 						float: right;
-						padding: 10px;
-						color: #fff;
-						background-color: @lead-gray-xdark;
+						line-height: 36px;
+						//width: 150px;
+						padding-right: 0;
+						text-align: center;
+						background-color: @lead-gray-base;
+						i{
+							float: right;
+							padding: 10px;
+							color: #fff;
+							background-color: @lead-gray-xdark;
+						}
 					}
 				}
 				

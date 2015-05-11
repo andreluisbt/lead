@@ -136,6 +136,16 @@
     </div>
 </div>
 
+
+<?php
+
+/*
+ * O "if" é só pra não exibir o menu em todas as páginas
+ */
+
+if(explode('/', $_SERVER['PHP_SELF'])[2] == 'oas.php'){
+?>
+
 <div id="oasBar">
 	
 	<div class="container">
@@ -204,7 +214,7 @@
 		</div>
 	</div>
 </div>
-
+<?php }?>
 
 <div id="breadcrumb" class="container">
     <ul>
