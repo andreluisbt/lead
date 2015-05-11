@@ -810,22 +810,25 @@ section#main{
 			li{
 				background-color: #fff;
 				margin-bottom: 10px;
+				overflow: hidden;
 				.number{
 					display: inline-block;
 					padding: 7px;
-					width: 100px;
+					//width: 100px;
 					text-align: center;
 					background-color: @lead-gray-base;
 				}
 				.title{
 					display: inline-block;
 					padding-left: 10px;
+					line-height: 36px;
 				}
 				.status{
 					display: inline-block;
 					float: right;
 					line-height: 36px;
-					width: 150px;
+					//width: 150px;
+					padding-right: 0;
 					text-align: center;
 					background-color: @lead-gray-base;
 					i{
@@ -838,9 +841,12 @@ section#main{
 				
 				&.in-progress{
 					background-color: @brand-primary;
-					color: #fff;
 					.number{
+						color: #fff;
 						background-color: @lead-blue-dark;
+					}
+					.title{
+						color: #fff;
 					}
 				}
 				
@@ -861,7 +867,7 @@ section#main{
 
 
 #products{
-		
+
 	border-bottom: 20px solid #fff;
 	margin-bottom: 50px;
 	
@@ -909,3 +915,6 @@ footer {
 	font-size: .9em;
 	text-align: right;
 }
+
+
+@import 'high_contrast.less';
