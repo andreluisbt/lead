@@ -161,51 +161,49 @@ if(explode('/', $_SERVER['PHP_SELF'])[2] == 'oas.php'){
 		<div class="collapse navbar-collapse">
 			<ul>
 				<li>
-					<a href="#">
+					<a href="lessons.php">
 						<i class="fa fa-list"></i>
 						Lista de aulas
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="oas.php?aula_id=0">
 						<i class="fa fa-laptop"></i>
 						Aula 01
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="oas.php?cdd_id=0">
 						<i class="fa fa-desktop"></i>
 						CDD Aula 01
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="oas.php?videoaula_id=0">
 						<i class="fa fa-video-camera"></i>
 						Vídeoaula 1a
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="oas.php?videoaula_id=0">
 						<i class="fa fa-video-camera"></i>
 						Vídeoaula 1b
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="oas.php?forum_id=0" class="active">
 						<i class="fa fa-clipboard"></i>
 						Fórum Aula 01
 					</a>
 				</li>
-				
-				
 				<li>
-					<a href="#">
+					<a href="oas.php?quiz_id=0">
 						<i class="fa fa-files-o"></i>
 						Exercicio Aula 01
 					</a>
 				</li>
 				<li>
-					<a href="#">
+					<a href="oas.php?quiz_id=0">
 						<i class="fa fa-pencil-square-o"></i>
 						Avaliação Aula 01
 					</a>

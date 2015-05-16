@@ -3,7 +3,6 @@
 	<head>
 		<?php include_once 'components/head.php';?>
 		<script type="text/javascript" src="js/dashboard.js"></script>
-		
 		<title>Aulas</title>
 	</head>
 
@@ -14,20 +13,20 @@
 				<?php include_once 'components/header.php';?>
 			</header>
 			
-			<section id="main" class="container">
-	            <h4 class="page-title">AULAS</h4>
-	            
-				<?php
-				
-				if(isset($_GET['cdd_id'])){
-					echo 'CDD';
-				}else if(isset($_GET['aula_id'])){
-					echo 'AULA';
-				}else{
-					echo 'NENHUM OBJ';
-				}
-				?>      
-            </section>
+			<h4 class="page-title">Aula 01 - Java Intermédiario</h4>
+			<?php
+                if(isset($_GET['aula_id'])){
+                    include_once 'oas/aula.php';
+                }else if(isset($_GET['cdd_id'])){
+                    include_once 'oas/cdd.php';
+                }else if(isset($_GET['quiz_id'])){
+                    include_once 'oas/quiz.php';
+                }else if(isset($_GET['videoaula_id'])){
+                    include_once 'oas/videoaula.php';
+                }else{
+                    echo 'NENHUM OBJ';
+                }
+            ?>   
             
             <?php include_once 'components/products.php';?>
 		

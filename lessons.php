@@ -25,9 +25,17 @@
 
                 <div class="lesson-list">
                     <h5>TURMA II</h5>
+                    
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">Mural de avisos</div>
+						<div class="panel-body">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						</div>
+					</div>
+                    
                     <ul>
                         <li class="done">
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                FINALIZADA
@@ -37,7 +45,7 @@
                         	</a>
                         </li>
                         <li class="in-progress">
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                CURSANDO
@@ -47,7 +55,7 @@
                         	</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                A INICIAR
@@ -57,7 +65,7 @@
                         	</a>
                         </li>  
                         <li>
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                A INICIAR
@@ -67,7 +75,7 @@
                         	</a>
                         </li>  
                         <li>
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                A INICIAR
@@ -77,7 +85,7 @@
                         	</a>
                         </li>  
                         <li>
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                A INICIAR
@@ -87,7 +95,7 @@
                         	</a>
                         </li>                        
                         <li class="in-progress done">
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                FINALIZADA
@@ -97,7 +105,7 @@
                         	</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                A INICIAR
@@ -107,7 +115,7 @@
                         	</a>
                         </li>  
                         <li>
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                A INICIAR
@@ -117,7 +125,7 @@
                         	</a>
                         </li>  
                         <li>
-                            <a href="#">
+                            <a href="oas.php?aula_id=0">
 	                            <div class="number col-xs-6 col-sm-2">Aula 01</div>
 	                            <div class="status col-xs-6 col-sm-3">
 	                                A INICIAR
