@@ -132,9 +132,6 @@ h4, .h4, h5, .h5, h6, .h6 {
 		padding: 6px 15px;
 	}
 	
-	.panel-body{
-		font-size: 14px;
-	}
 }
 
 .form-control{
@@ -260,7 +257,6 @@ label{
 body{
 	background: @lead-gray-xlight;
 	color: @lead-gray-xdark;
-	font-size: 16px;
 }
 
 ul{
@@ -783,7 +779,6 @@ section#main{
 			.back{
 				color: @lead-blue-dark;
 				font-family: @lead-font-family;
-				font-size: 16px;
 				span{
 					border: 1px solid @lead-blue-dark;
 					margin-bottom: 10px;
@@ -876,7 +871,7 @@ section#main{
 			border: 5px solid @lead-blue-dark;
 			border-radius: 100px;
 			color: #fff;
-			font-size: 28px;
+			font-size: 1.8em;
 			overflow: hidden;
 			margin: 0 auto;
 			margin-bottom: 20px;
@@ -1166,6 +1161,109 @@ section#main{
 				}
 			}
 		}
+	}
+	
+	.forum{
+		.post{
+			margin-top: 20px;
+			.header{
+				background-color: @lead-gray-light;
+				font-family: @lead-font-family;
+				font-size: 1.4em;
+				padding: 15px;
+				img{
+					width: 50px;
+					height: 50px;
+					border-radius: 100px;
+					margin-right: 15px;
+				}
+				.date{
+					font-size: .7em;
+					color: @lead-blue-dark;
+				}
+			}
+			.body{
+				background-color: #fff;
+				padding: 20px;
+				
+				.video{
+					text-align: center;
+					margin: 20px;
+				}
+				.attach{
+					ul{
+						overflow: hidden;
+						margin: 10px;
+						li{
+							a{
+								background-color: @lead-gray-xlight;
+								color: @brand-primary;
+								overflow: hidden;
+								display: block;
+								
+								i{
+									background-color: @lead-gray-dark;
+									color: @lead-gray-xdark;
+									padding: 6px 10px;
+									margin-right: 5px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.footer{
+				overflow: hidden;
+				background-color: @brand-primary;
+				button{
+					font-size: 1.1em
+					padding: 10px 50px;
+					background-color: @lead-blue-xdark;
+					color: #fff;
+					&:hover,
+					&:focus{
+						background-color: lighten(@lead-blue-xdark, 10%);
+					}
+				}
+			}
+			
+			.childrens{
+				margin-left: 50px;
+				@media (max-width: @screen-sm-max) {
+					margin-left: 20px;
+				}
+			}
+			
+			&.main{
+				>.childrens{
+					margin-left: 0;
+				}
+			}
+		}
+		
+		.pagination{
+			li{
+				a{
+					font-family: @lead-font-family;
+					background-color: transparent;
+					border: 1px solid @brand-primary;
+					padding: 6px 15px;
+					margin: 5px;
+					font-size: 22px;
+					&:hover,
+					&:focus{
+						
+					}
+				}
+				&.active{
+					a{
+						background-color: @brand-primary;
+						color: #fff;
+					}
+				}
+			}
+		}
+		
 	}
 }
 

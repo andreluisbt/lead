@@ -23,6 +23,8 @@
                     include_once 'oas/quiz.php';
                 }else if(isset($_GET['videoaula_id'])){
                     include_once 'oas/videoaula.php';
+                }else if(isset($_GET['forum_id'])){
+                    include_once 'oas/forum.php';
                 }else{
                     echo 'NENHUM OBJ';
                 }
