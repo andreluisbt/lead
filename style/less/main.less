@@ -58,6 +58,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 	&.btn-purple{
 		color: #fff;
 		background-color: @brand-purple;
+		border-color: @brand-purple-dark;
 		border-bottom: 5px solid @brand-purple-dark;
 		&:hover,
 		&:focus{
@@ -598,6 +599,56 @@ section#main{
   	}
 }
 
+#dashboard, #admin{
+	#inbox{
+		margin-bottom: 25px;
+		.table{
+			thead{
+				tr{
+					th{
+						font-family: @lead-font-family;
+						border: 1px solid @lead-gray-xdark !important;
+						font-weight: normal;
+						color: @lead-gray-xdark;
+					}
+				}
+			}
+			tbody{
+				tr{
+					td{
+						img{
+							border-radius: 100px;
+							width: 45px;
+						  	height: 45px;
+						}
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+	
+	#videoConference{
+		margin-bottom: 25px;
+		.panel{
+			background: none;
+			.panel-heading{
+				border-bottom: 10px solid @brand-success-dark;
+			}
+			.panel-body{
+				text-align: center;
+			}
+		}
+		
+		ul{
+			 margin: 30px 10px;
+			a{
+				text-decoration: underline !important;
+			}
+		}
+	}
+}
+
 #dashboard{
 
 	.couses-in-progress{
@@ -698,55 +749,6 @@ section#main{
 		
 	}
 	
-	#inbox{
-		margin-bottom: 25px;
-		.table{
-			thead{
-				tr{
-					th{
-						font-family: @lead-font-family;
-						border: 1px solid @lead-gray-xdark !important;
-						font-weight: normal;
-						color: @lead-gray-xdark;
-					}
-				}
-			}
-			tbody{
-				tr{
-					td{
-						img{
-							border-radius: 100px;
-							width: 45px;
-						  	height: 45px;
-						}
-						vertical-align: middle;
-					}
-				}
-			}
-		}
-	
-	}
-	
-	#videoConference{
-		margin-bottom: 25px;
-		.panel{
-			background: none;
-			.panel-heading{
-				border-bottom: 10px solid @brand-success-dark;
-			}
-			.panel-body{
-				text-align: center;
-			}
-		}
-		
-		ul{
-			 margin: 30px 10px;
-			a{
-				text-decoration: underline !important;
-			}
-		}
-	}
-	
 	#grades{
 		margin-bottom: 25px;
 		.panel{
@@ -801,6 +803,84 @@ section#main{
 	
 }
 
+
+#admin{
+	.bt-calendar,
+	.bt-grade{
+		padding: 40px;
+		  padding: 30px 60px;
+		  white-space: initial;
+		  background-repeat: no-repeat;
+		  background-position-y: bottom;
+		  margin-bottom: 20px;
+	}
+	.bt-calendar{
+		background-image: url(../../imgs/bg-bt_calendar.png);
+	}
+	.bt-grade{
+		background-image: url(../../imgs/bg-bt_grade.png);
+	}
+	
+	.block-title{
+		text-align: center;
+		.icon {
+			background-color: @brand-primary;
+			border: 5px solid @lead-blue-dark;
+			border-radius: 100px;
+			color: #fff;
+			font-size: 28px;
+			overflow: hidden;
+			margin: 0 auto;
+			margin-bottom: 20px;
+			width: 70px;
+			height: 70px;
+			line-height: 60px;
+		}
+		
+		.title{
+			color: @lead-blue-dark;
+			padding: 10px;
+			display: inline-block;
+			font-size: 18px;
+			background-color: @lead-gray-xlight;
+		}
+		.stripes{
+			border-top: 1px solid @brand-primary;
+			border-bottom: 1px solid @brand-primary;
+			height: 6px;
+			margin-top: -26px;
+			margin-bottom: 26px;
+		}
+	}
+	
+	.panel{
+		.panel-heading{
+			text-align: left;
+			i{
+				padding: 10px 12px;
+				margin: -5px 10px -6px -15px;
+				background-color: @lead-blue-dark;
+			}
+		}
+		.panel-body{
+			ul{
+				li{
+					a{
+						display: block;
+						border-bottom: 1px solid @lead-gray-dark;
+						padding: 4px 0;
+					}
+					&:last-child{
+						a{
+							border-bottom: none;
+						}
+					}
+				}
+			}			
+		}
+			
+	}
+}
 
 #profile{
 
@@ -887,7 +967,6 @@ section#main{
 					.number{
 						display: inline-block;
 						padding: 7px;
-						//width: 100px;
 						text-align: center;
 						background-color: @lead-gray-base;
 					}
@@ -900,7 +979,6 @@ section#main{
 						display: inline-block;
 						float: right;
 						line-height: 36px;
-						//width: 150px;
 						padding-right: 0;
 						text-align: center;
 						background-color: @lead-gray-base;
