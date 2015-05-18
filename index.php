@@ -31,94 +31,110 @@
 	            </div>
             
 	            <div id="calendar" class="col-md-6">
-	                <div class="year-bar">
-	                    <a href="#" class="btn prev">
-	                        <i class="fa fa-chevron-left"></i>
-	                    </a>
-	                    <div class="year">2015</div>
-	                    <a href="#" class="btn next">
-	                        <i class="fa fa-chevron-right"></i>
-	                    </a>
+	                <div class="all-months active">
+    	                <div class="year-bar">
+    	                    <a href="#" class="btn prev">
+    	                        <i class="fa fa-chevron-left"></i>
+    	                    </a>
+    	                    <div class="year">2015</div>
+    	                    <a href="#" class="btn next">
+    	                        <i class="fa fa-chevron-right"></i>
+    	                    </a>
+    	                </div>
+    	                
+    	                <div class="courses-list">
+    	                    <select>
+    	                        <option value="0">Selecione um curso</option>
+    	                        <option value="1">Java Básico</option>
+    	                        <option value="2">Java Intermediário</option>
+    	                    </select>
+    	                </div>
+    	                
+    	                <div class="months">
+    	                    
+    	                    <ul>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+    	                        <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <a href="#">
+                                        <div>JAN</div>
+                                        <span>5</span>
+                                        COMPROMISSOS
+                                    </a>
+                                </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+    	                        <li class="col-xs-6 col-sm-4 col-md-3">
+    	                            <a href="#">
+    	                                <div>JAN</div>
+    	                                <span>5</span>
+    	                                COMPROMISSOS
+    	                            </a>
+    	                        </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+                                <li class="col-xs-6 col-sm-4 col-md-3">
+                                    <div>
+                                        <div>JAN</div>
+                                    </div>
+                                </li>
+    	                    </ul>
+	                   </div>
 	                </div>
-	                
-	                <div class="courses-list">
-	                    <select>
-	                        <option value="0">Selecione um curso</option>
-	                        <option value="1">Java Básico</option>
-	                        <option value="2">Java Intermediário</option>
-	                    </select>
-	                </div>
-	                
-	                <div class="months">
-	                    
-	                    <ul>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-                                <a href="#">
-                                    <div>JAN</div>
-                                    <span>5</span>
-                                    COMPROMISSOS
+	                <div class="all-tasks col-md-12">
+						<div class="panel panel-primary">
+							<div class="panel-heading">
+								COMPROMISSOS
+							</div>
+							<div class="panel-body">
+                                <a href="#" class="back">
+                                    <span>
+                                        <i class="fa fa-angle-left"></i>
+                                    </span>
+                                    VOLTAR
                                 </a>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-	                        <li class="col-xs-6 col-sm-4 col-md-3">
-	                            <a href="#">
-	                                <div>JAN</div>
-	                                <span>5</span>
-	                                COMPROMISSOS
-	                            </a>
-	                        </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-                            <li class="col-xs-6 col-sm-4 col-md-3">
-                                <div>
-                                    <div>JAN</div>
-                                </div>
-                            </li>
-                            
-	                    </ul>
-	                </div>
+							</div>
+						</div>
+					</div>
 	            </div>
             
 	            <div id="inbox" class="col-md-6">

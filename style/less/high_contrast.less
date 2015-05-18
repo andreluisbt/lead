@@ -90,6 +90,31 @@
 		border-bottom: 1px solid #fff;
 	}
 	
+	#oasBar{
+		border-top: 1px solid #fff;
+		border-bottom: 1px solid #fff;
+		.navbar-header{
+			.navbar-toggle{
+				.icon-bar{
+					background-color: #fff !important;
+				}
+				&:hover,
+				&:focus{
+					.icon-bar{
+						background-color: #fff !important;
+					}
+				}
+			}
+		}
+	}
+	
+	.panel{
+		border: 1px solid #fff;
+		.panel-heading{
+			border: 1px solid #fff;
+		}
+	}
+	
 	#calendar{
 		.year-bar{
 			border: 1px solid #fff;
@@ -145,14 +170,41 @@
 		}
 	}
 	
-	footer{
-    	border-top: 1px solid #fff;
-    	border-bottom: 1px solid #fff;
-	}
-	
 	.block-title{
 		.title{
 			background-color: #000 !important;
 		}
 	}
+	
+	&#oas{
+		.quiz{
+			.pagination{
+				border: 1px solid #fff;
+				ul{
+					li{
+						a{
+							border: 1px solid #fff;
+						}
+					}
+				}
+			}
+			.options{
+				input[type=radio]{
+					&+span:before{
+						border-color: #000;
+						box-shadow: 0 0 0px 2px #fff;
+					}
+					&:checked +span:before{
+						background-color: #fff;
+					}
+				}
+			}
+		}
+	}
+	
+	footer{
+    	border-top: 1px solid #fff;
+    	border-bottom: 1px solid #fff;
+	}
+	
 }

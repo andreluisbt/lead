@@ -21,7 +21,7 @@
     	               <a href="#" class="btn btn-primary btn-block bt-calendar">VISUALIZAR CALENDÁRIO</a>
     	            </div>
     	            <div class="col-md-6">
-                       <a href="#" class="btn btn-primary btn-purple bt-grade">VISUALIZAR NOTAS</a>
+                       <a href="#" class="btn btn-primary btn-purple btn-block bt-grade">VISUALIZAR NOTAS</a>
                     </div>
                     
                     <div id="videoConference" class="col-md-12">

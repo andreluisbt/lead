@@ -14,7 +14,10 @@ $("document").ready(function(){
 				var percent = $(this).data('percent');
 				var pieChart = $(this).data('easyPieChart');
 				
-				pieChart.options.barColor = "#ffff00";
+				console.log(pieChart.options);
+				
+				pieChart.options.trackColor = "#ffff00";
+				pieChart.options.barColor = "#ffffff";
 				pieChart.update(percent);
 			});
 		}else{
@@ -42,7 +45,7 @@ $("document").ready(function(){
 
 	$('.pie-chart').easyPieChart({
 		barColor: '#009ee3',
-		trackColor: '#f2f2f2',
+		trackColor: 'transparent',
 		trackWidth: 20,
 		scaleColor: false,
 		size: 230,
@@ -77,5 +80,23 @@ $("document").ready(function(){
 	 * Mask
 	**/
 	$.applyDataMask();
+	
+	
+	/*
+	 * Calendar
+	 */
+	$('#calendar .months').on('click', 'a', function(e){
+		e.preventDefault();
+		
+		$('#calendar .all-months').removeClass('active');
+		$('#calendar .all-tasks').addClass('active');
+	});
+	
+	$('#calendar .all-tasks').on('click', 'a.back', function(e){
+		e.preventDefault();
+		
+		$('#calendar .all-tasks').removeClass('active');
+		$('#calendar .all-months').addClass('active');
+	});
 	
 });
