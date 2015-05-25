@@ -31,7 +31,7 @@
 	            </div>
             
 	            <div id="calendar" class="col-md-6">
-	                <div class="all-months active">
+	                <div class="all-months col-md-12 active">
     	                <div class="year-bar">
     	                    <a href="#" class="btn prev">
     	                        <i class="fa fa-chevron-left"></i>
@@ -51,7 +51,6 @@
     	                </div>
     	                
     	                <div class="months">
-    	                    
     	                    <ul>
                                 <li class="col-xs-6 col-sm-4 col-md-3">
                                     <div>
@@ -135,6 +134,7 @@
 							</div>
 						</div>
 					</div>
+					<div class="clearfix"></div>
 	            </div>
             
 	            <div id="inbox" class="col-md-6">

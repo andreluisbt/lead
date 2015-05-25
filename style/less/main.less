@@ -689,9 +689,10 @@ section#main{
 	
 	#calendar{
 		margin-bottom: 25px;
+		padding: 0;
+		
 		.all-months,
 		.all-tasks{
-			position: absolute;
 			transition: 600ms;
 			-webkit-transform: rotateY(180deg);
 			-webkit-backface-visibility: hidden;
@@ -758,11 +759,11 @@ section#main{
 						color: @lead-blue-xdark;
 						border-bottom: 10px solid @lead-blue-xdark;
 						display: block;
-						font-size: .7em;
+						font-size: .6em;
 						text-align: center;
 					
 						div{
-							font-size: 1.5em;
+							font-size: 1.7em;
 							text-align: left;
 							padding: 0 10px;
 						}
@@ -791,6 +792,8 @@ section#main{
 			}
 		}
 		.all-tasks{
+			position: absolute;
+			width: 100%;
 			.panel{
 				min-height: 450px;
 			}
