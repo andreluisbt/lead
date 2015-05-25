@@ -19,6 +19,7 @@
 	            
 	            <div class="user-picture">
 	               <img src="imgs/user.jpg" />
+	               <a href="#">ALTERAR FOTO</a>
 	            </div>
 	            
                 <form>

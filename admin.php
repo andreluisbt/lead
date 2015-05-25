@@ -116,10 +116,13 @@
                        <div class="stripes"></div>
                     </div>
                     
+                    
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-users"></i>
-                            CONTAS
+                            <a href="#">
+	                            <i class="fa fa-users"></i>
+	                            CONTAS
+                            <a/>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -138,8 +141,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-minus-circle"></i>
-                            PERMISSÕES
+							<a href="#">
+	                            <i class="fa fa-minus-circle"></i>
+	                            PERMISSÕES
+                        	</a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -152,8 +157,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-pencil"></i>
-                            PRÉ-INSCRIÇÃO
+                            <a href="#">
+	                            <i class="fa fa-pencil"></i>
+	                            PRÉ-INSCRIÇÃO
+	                       	</a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -176,8 +183,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-files-o"></i>
-                            ATIVIDADES
+                            <a href="#">
+	                            <i class="fa fa-files-o"></i>
+	                            ATIVIDADES
+                        	</a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -196,8 +205,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-server"></i>
-                            SERVIDORES
+							<a href="#">
+	                            <i class="fa fa-server"></i>
+	                            SERVIDORES
+	                       </a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -213,8 +224,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-lock"></i>
-                            SEGURANÇA
+                            <a href="#">
+	                            <i class="fa fa-lock"></i>
+	                            SEGURANÇA
+	                        </a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -227,8 +240,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-text-height"></i>
-                            GLOSSÁRIO
+	                         <a href="#">
+	                            <i class="fa fa-text-height"></i>
+	                            GLOSSÁRIO
+	                       	</a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -241,8 +256,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-file-o"></i>
-                            CERTIFICADO
+                            <a href="#">
+	                            <i class="fa fa-file-o"></i>
+	                            CERTIFICADO
+	                        </a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -304,8 +321,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-check-square-o"></i>
-                            QUESTÕES
+                            <a href="#">
+	                            <i class="fa fa-check-square-o"></i>
+	                            QUESTÕES
+	                        </a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -318,8 +337,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-clipboard"></i>
-                            DISCIPLINAS
+                            <a href="#">
+	                            <i class="fa fa-clipboard"></i>
+	                            DISCIPLINAS
+	                        </a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -332,8 +353,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-files-o"></i>
-                            PROVA DE SELEÇÃO
+                            <a href="#">
+	                            <i class="fa fa-files-o"></i>
+	                            PROVA DE SELEÇÃO
+	                        </a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -355,8 +378,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-files-o"></i>
-                            PROVA DE CERTIFICAÇÃO
+                            <a href="#">
+	                            <i class="fa fa-files-o"></i>
+	                            PROVA DE CERTIFICAÇÃO
+	                       	</a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -372,8 +397,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart"></i>
-                            GERENCIAR CONTEÚDO
+                            <a href="#">
+	                            <i class="fa fa-bar-chart"></i>
+	                            GERENCIAR CONTEÚDO
+	                        </a> 
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -396,8 +423,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-bullseye"></i>
-                            DEFINIÇÃO DE NOTAS
+                            <a href="#">
+	                            <i class="fa fa-bullseye"></i>
+	                            DEFINIÇÃO DE NOTAS
+	                        </a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -416,8 +445,10 @@
                     
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <i class="fa fa-bullseye"></i>
-                            RELATÓRIO
+                            <a href="#">
+	                            <i class="fa fa-bullseye"></i>
+	                            RELATÓRIO
+	                        </a>
                         </div>
                         <div class="panel-body">
                             <ul>
@@ -472,11 +503,8 @@
                         </div>
                     </div>
                     
-                    
                 </div>
                 
-                
-	            
             </section>
             
             <?php include_once 'components/products.php';?>

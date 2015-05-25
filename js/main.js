@@ -99,4 +99,14 @@ $("document").ready(function(){
 		$('#calendar .all-months').addClass('active');
 	});
 	
+	/*
+	 * Open/close panels
+	 */
+	
+	$('#admin .panel .panel-heading a').click(function(e){
+		e.preventDefault();
+		$(this).parents('.panel').find('.panel-body').toggle();
+	});
+	
+	
 });

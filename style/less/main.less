@@ -81,6 +81,15 @@ h4, .h4, h5, .h5, h6, .h6 {
 		text-align: center;
 		font-family: @lead-font-family;
 	}
+	.panel-heading{
+		>a{
+			display: block;
+			&:hover,
+			&:focus{
+				color: #fff !important;
+			}
+		}
+	}
 	.panel-body{
 		ul{
 			li{
@@ -88,6 +97,13 @@ h4, .h4, h5, .h5, h6, .h6 {
 					display: block;
 					border-bottom: 1px solid @lead-gray-dark;
 					padding: 4px 0;
+					
+					&:hover,
+					&:focus{
+						background-color: @lead-blue-dark;
+						color: #fff;
+					}
+					
 				}
 				&:last-child{
 					a{
@@ -648,9 +664,11 @@ section#main{
 			.panel-heading{
 				border-bottom: 10px solid @brand-success-dark;
 			}
+			
 			.panel-body{
 				text-align: center;
 			}
+			
 		}
 		
 		ul{
