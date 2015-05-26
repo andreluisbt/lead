@@ -905,7 +905,7 @@ section#main{
 			color: @lead-blue-dark;
 			padding: 10px;
 			display: inline-block;
-			font-size: 18px;
+			font-size: 1.1em;
 			background-color: @lead-gray-xlight;
 		}
 		.stripes{
@@ -1287,6 +1287,71 @@ section#main{
 		
 	}
 }
+
+#tutor{
+	.block-title{
+		text-align: center;
+		background-color: @brand-primary;
+		margin-top: 45px;
+		.icon {
+			background-color: darken(@lead-blue-dark, 8%);
+			border: 5px solid @lead-blue-xdark;
+			border-radius: 100px;
+			color: #fff;
+			font-size: 2.2em;
+			overflow: hidden;
+			margin: 0 auto;
+			margin-top: -45px;
+			width: 90px;
+			height: 90px;
+			line-height: 75px;
+			display: inline-block;
+		}
+		
+		.title{
+			color: #fff;
+			padding: 10px;
+			font-family: @lead-font-family;
+		}
+	}
+	
+	.panel{
+		.panel-heading{
+			background-color: darken(@lead-blue-dark, 8%);
+			padding: 15px;
+		}
+		.panel-body{
+			padding: 0;
+		}
+		
+		.oas{
+			li{
+				padding: 8px;
+				a{
+					color: #fff;
+					background-color: @lead-blue-xdark;
+					border-bottom: 7px solid darken(@lead-blue-dark, 8%);
+					text-align: center;
+					padding: 10px 3px;
+					font-size: .7em;
+					.badge{
+						position: absolute;
+						right: 3px;
+						top: 3px;
+						font-size: 1.2em;
+						background: @brand-danger;
+					}
+					i{
+						font-size: 2.2em;
+						display: block;
+						margin-bottom: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 
 footer {
