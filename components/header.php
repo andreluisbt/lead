@@ -46,7 +46,7 @@
     <div class="container">
         
         <div class="navbar-header">
-			<img src="imgs/logo-dell.png" class="logo visible-xs pull-left" alt="Accessible learning">
+			<img src="<?php echo $SYSTEM->rooturl; ?>/imgs/logo-dell.png" class="logo visible-xs pull-left" alt="Accessible learning">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigationBar .navbar-collapse">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -55,7 +55,7 @@
 		</div>
         
         <div class="collapse navbar-collapse">
-            <img src="imgs/logo-dell.png" class="logo hidden-xs" alt="Accessible learning"> 
+            <img src="<?php echo $SYSTEM->rooturl; ?>/imgs/logo-dell.png" class="logo hidden-xs" alt="Accessible learning"> 
             <ul>
                 <li>
                     <a href="#">Cursos</a>
@@ -81,7 +81,7 @@
 	                <a href="#">Escolha seu DELL</a>
 	            </li>
 	            <li class="user-item">
-					<img src="imgs/user.jpg">
+					<img src="<?php echo $SYSTEM->rooturl; ?>/imgs/user.jpg">
 					<a href="profile.php">
     	                Nome do aluno
 					</a>
@@ -115,7 +115,7 @@
         </ul>
         <div id="userButton" class="dropdown pull-right">
             <a id="userProfileButton" href="profile.php">
-                <img src="imgs/user.jpg">
+                <img src="<?php echo $SYSTEM->rooturl; ?>/imgs/user.jpg">
                 Nome do aluno
             </a>
             <a id="userDownButton" href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<?php include_once 'components/head.php';?>
+		<?php include_once '../components/head.php';?>
 		<script type="text/javascript" src="js/dashboard.js"></script>
 		
 		<title>Página do aluno</title>
@@ -11,7 +11,7 @@
 		<div id="wrapPage">
 			
 			<header>
-				<?php include_once 'components/header.php';?>
+				<?php include_once '../components/header.php';?>
 			</header>
 			
 			<section id="main" class="container">
@@ -68,32 +68,32 @@
 	    				</thead>
 	    				<tbody>
 	    					<tr>
-	    						<td><img src="imgs/user.jpg"></td>
+	    						<td><img src="<?php echo $SYSTEM->rooturl; ?>/imgs/user.jpg"></td>
 	    						<td>Dúvidas sobre a aula 03 de JAVA</td>
 	    						<td>04/05/2015</td>
 	    					</tr>
 	    					<tr>
-	                            <td><img src="imgs/user.jpg"></td>
+	                            <td><img src="<?php echo $SYSTEM->rooturl; ?>/imgs/user.jpg"></td>
 	                            <td>Dúvidas sobre a aula 03 de JAVA</td>
 	                            <td>04/05/2015</td>
 	                        </tr>
 	                        <tr>
-	                            <td><img src="imgs/user.jpg"></td>
+	                            <td><img src="<?php echo $SYSTEM->rooturl; ?>/imgs/user.jpg"></td>
 	                            <td>Dúvidas sobre a aula 03 de JAVA</td>
 	                            <td>04/05/2015</td>
 	                        </tr>
 	                        <tr>
-	                            <td><img src="imgs/user.jpg"></td>
+	                            <td><img src="<?php echo $SYSTEM->rooturl; ?>/imgs/user.jpg"></td>
 	                            <td>Dúvidas sobre a aula 03 de JAVA</td>
 	                            <td>04/05/2015</td>
 	                        </tr>
 	                        <tr>
-	                            <td><img src="imgs/user.jpg"></td>
+	                            <td><img src="<?php echo $SYSTEM->rooturl; ?>/imgs/user.jpg"></td>
 	                            <td>Dúvidas sobre a aula 03 de JAVA</td>
 	                            <td>04/05/2015</td>
 	                        </tr>
 	                        <tr>
-	                            <td><img src="imgs/user.jpg"></td>
+	                            <td><img src="<?php echo $SYSTEM->rooturl; ?>/imgs/user.jpg"></td>
 	                            <td>Dúvidas sobre a aula 03 de JAVA</td>
 	                            <td>04/05/2015</td>
 	                        </tr>
@@ -507,10 +507,10 @@
                 
             </section>
             
-            <?php include_once 'components/products.php';?>
+            <?php include_once '../components/products.php';?>
 		
 			<footer>
-				<?php include_once 'components/footer.php';?>
+				<?php include_once '../components/footer.php';?>
 			</footer>
 			
 		</div>		

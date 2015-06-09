@@ -185,7 +185,7 @@
             
 	            <div id="videoConference" class="col-md-6">
 	                
-	                <div class="panel panel-success">
+	                <div class="panel panel-success lead-panel">
 						<div class="panel-heading">
 							VÍDEO CONFERÊNCIA
 						</div>
@@ -217,7 +217,7 @@
             
 	            <div id="grades" class="col-md-6">
 	                
-	                <div class="panel panel-purple">
+	                <div class="panel panel-purple lead-panel">
 	                    <div class="panel-heading">
 	                        NOTAS
 	                    </div>

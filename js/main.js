@@ -108,5 +108,22 @@ $("document").ready(function(){
 		$(this).parents('.panel').find('.panel-body').toggle();
 	});
 	
+	/*
+	 * Html Editor summernote
+	 */
+	$('.summernote').summernote();
+	
+	
+	/*
+	 * File browser
+	 */
+	$('.lead-filebrowser .lead-filebrowser-area').click(function(e){
+		e.preventDefault();
+		$(this).parents('.lead-filebrowser').find('input[type="file"]').trigger('click');
+	});
+	
+	$('.lead-filebrowser').on('change', 'input[type="file"]', function(e){
+		$(this).parents('.lead-filebrowser').find('.file-name').html(this.files[0].name);
+	});
 	
 });

@@ -148,6 +148,51 @@ h4, .h4, h5, .h5, h6, .h6 {
 		padding: 6px 15px;
 	}
 	
+	&.lead-panel{
+		background: none;
+		.panel-heading{
+			border-bottom: 10px solid;
+		}
+		.panel-body{
+			padding: 15px 0;	
+		}
+		&.panel-primary{
+			.panel-heading{
+				border-bottom-color: @brand-primary-dark;
+			}
+	    }
+	    
+		&.panel-success{
+			.panel-heading {
+				border-bottom-color: @brand-success-dark;
+			}
+		}
+	
+	    &.panel-info{
+			.panel-heading{
+				border-bottom-color: @brand-info-dark;
+			}
+	    }
+	    &.panel-warning{
+			.panel-heading{
+				border-bottom-color: @brand-warning-dark;
+	      	}
+	    }
+	    &.panel-danger{
+	      	.panel-heading{
+	        	border-bottom-color: @brand-danger-dark;
+	      	}
+	    }
+	    &.panel-purple{
+	      	.panel-heading{
+	        	border-bottom-color: @brand-purple-dark;
+	      	}
+	    }
+	    .panel-heading{
+	      	padding: 6px 15px;
+	    }
+	}
+	
 }
 
 .form-control{
@@ -163,10 +208,36 @@ label{
 	font-weight: normal;
 }
 
+fieldset{
+	border: 1px solid @lead-gray-base;
+	padding: 15px;
+}
+
 .form-control-static{
 	border-bottom: 2px solid darken(@lead-gray-dark, 10%);
 	min-height: inherit;
 	color: darken(@lead-gray-dark, 15%);
+}
+
+.tooltip{
+	font-size: 1em;
+}
+
+.note-editor{
+	border: none;
+	
+	.note-toolbar{
+		border: none;
+		font-size: .8em;
+		background-color: @lead-gray-base;
+		margin-left: 0;
+	}
+	.note-editable{
+		.form-control;
+		min-height: 100px;
+		max-height: 500px;
+		height: inherit;
+	}
 }
 
 /********************/
@@ -456,7 +527,17 @@ button{
 			}
 		}
 	}
+}
+
+.lead-filebrowser{
 	
+	input[type="file"]{
+		display: none;
+	}
+	.lead-filebrowser-area{
+		background-color: @lead-gray-base;
+		cursor: pointer;
+	}
 }
 
 #userBar{
@@ -620,7 +701,7 @@ section#main{
 		width: 100%;
 		text-align: center;
 		top: 50%;
-		font-size: 22px;
+		font-size: 1.4em;
 		color: #fff;
 		padding: 0 20px;
 		transform: translateY(-50%);
@@ -659,18 +740,6 @@ section#main{
 	
 	#videoConference{
 		margin-bottom: 25px;
-		.panel{
-			background: none;
-			.panel-heading{
-				border-bottom: 10px solid @brand-success-dark;
-			}
-			
-			.panel-body{
-				text-align: center;
-			}
-			
-		}
-		
 		ul{
 			 margin: 30px 10px;
 			a{
@@ -818,10 +887,8 @@ section#main{
 		.panel{
 			background: @lead-gray-light;
 			margin-bottom: 0;
-			.panel-heading{
-				border-bottom: 10px solid @brand-purple-dark;
-			}
 			.panel-body{
+				padding: 15px;
 				text-align: center;
 			}
 		}
@@ -1351,6 +1418,25 @@ section#main{
 		}
 	}
 }
+
+
+
+
+
+#manager-forum-topic{
+	#video{
+		.panel{
+			.panel-body{
+				video{
+					width: 100%;
+				} 
+			}
+		}
+	}
+}
+
+
+
 
 
 

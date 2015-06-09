@@ -12,7 +12,7 @@
                     
                     <div class="col-sm-6 col-md-6">
                         <div class="product-img col-md-5">
-                            <img src="imgs/produto1.jpg">
+                            <img src="<?php echo $SYSTEM->rooturl; ?>/imgs/produto1.jpg">
                         </div>
                         <div class="product-desc col-md-7">
                             <h5>Nome do produto</h5>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <div class="product-img col-md-5">
-                            <img src="imgs/produto1.jpg">
+                            <img src="<?php echo $SYSTEM->rooturl; ?>/imgs/produto1.jpg">
                         </div>
                         <div class="product-desc col-md-7">
                             <h5>Nome do produto</h5>
@@ -41,7 +41,7 @@
                     
                     <div class="col-sm-6 col-md-6">
                         <div class="product-img col-md-5">
-                            <img src="imgs/produto1.jpg">
+                            <img src="<?php echo $SYSTEM->rooturl; ?>/imgs/produto1.jpg">
                         </div>
                         <div class="product-desc col-md-7">
                             <h5>Nome do produto</h5>
@@ -53,7 +53,7 @@
                     </div>
                     <div class="col-sm-6 col-md-6">
                         <div class="product-img col-md-5">
-                            <img src="imgs/produto1.jpg">
+                            <img src="<?php echo $SYSTEM->rooturl; ?>/imgs/produto1.jpg">
                         </div>
                         <div class="product-desc col-md-7">
                             <h5>Nome do produto</h5>
