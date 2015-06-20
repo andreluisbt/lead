@@ -115,31 +115,105 @@
 		}
 	}
 	
+	.calendar{
+		.days{
+			.week{
+				ul{
+					li{
+						&.name{
+							border: 1px solid #fff;
+						}
+						&.today{
+							a{
+								background-color: #fff !important;
+								color: #000 !important;
+								.flag{
+									border-color: #000 #000 transparent transparent !important;
+								}
+							}
+						}
+						a{
+							.flag{
+								border-color: #fff #fff transparent transparent !important;
+							}
+						}
+					}
+				}
+			}
+		}
+		.events{
+			.event{
+				.title{
+					border: 1px solid #fff;
+				}
+				.date{
+					border: 1px solid #fff;
+				}
+			}	
+		}
+	}
+	
 	#calendar{
 		.year-bar{
 			border: 1px solid #fff;
 		}
-		.months{
-			li{
-				>div,
-				>a{
-					border: 1px solid #fff;
-					span{
+		.all-months{
+			.months{
+				li{
+					>div,
+					>a{
 						border: 1px solid #fff;
-					}
-					
-					&:hover,
-					&:focus{
-						border-color: #fff !important;
-						div{
-							color: #fff !important;
-						}
 						span{
-							color: #fff !important;
+							border: 1px solid #fff;
+						}
+						
+						&:hover,
+						&:focus{
 							border-color: #fff !important;
+							div{
+								color: #fff !important;
+							}
+							span{
+								color: #fff !important;
+								border-color: #fff !important;
+							}
 						}
 					}
 				}
+			}
+		}
+		.all-tasks{
+			.days{
+				.week{
+					ul{
+						li{
+							&.today{
+								a{
+									background-color: #fff !important;
+									color: #000 !important;
+									.flag{
+										border-color: #000 #000 transparent transparent !important;
+									}
+								}
+							}
+							a{
+								.flag{
+									border-color: #fff #fff transparent transparent !important;
+								}
+							}
+						}
+					}
+				}
+			}
+			.events{
+				.event{
+					.title{
+						border: 1px solid #fff;
+					}
+					.date{
+						border: 1px solid #fff;
+					}
+				}	
 			}
 		}
 	}

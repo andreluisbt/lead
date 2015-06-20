@@ -715,6 +715,10 @@ section#main{
   	}
 }
 
+.scroll{
+	overflow: auto;
+}
+
 #dashboard, #admin{
 	#inbox{
 		margin-bottom: 25px;
@@ -754,6 +758,107 @@ section#main{
 		}
 	}
 }
+
+
+
+
+
+
+
+.calendar{
+	.days{
+		margin-top: 20px;
+		text-align: center;
+		.week{
+			width: 13%;
+		  	display: inline-block;
+			ul{
+				li{
+					margin: 1px;
+					&.name{
+						background-color: @lead-blue-dark;
+						color: #fff;
+						padding: 5px;
+						margin-bottom: 3px;
+					}
+					&.sunday,
+					&.saturday{
+						background-color: @lead-gray-dark;
+					}
+					
+					&.today{
+						a{
+							background-color: @lead-blue-dark;
+							color: #fff;
+							.flag{
+								border-top-color: #fff;
+								border-right-color: #fff;
+							}
+						}
+					}
+					
+					a{
+						color: @lead-blue-xdark;
+						border-bottom: 2px solid @lead-blue-dark;
+						padding: 4px 0;
+						padding: 15px;
+						position: relative;
+						
+						.flag{
+							position: absolute;
+							top: 1px;
+							right: 1px;
+							border: 7px solid transparent;
+							border-top-color: @lead-blue-dark;
+							border-right-color: @lead-blue-dark;
+						}
+						
+						&:hover,
+						&:focus{
+							color: #fff;
+							.flag{
+								border-top-color: #fff;
+								border-right-color: #fff;
+							}
+						}
+						
+						
+					}
+				}
+			}
+		}
+	}
+		
+	.events{
+		margin-top: 20px;
+		.event{
+			font-size: .8em;
+			margin: 2px 0;
+			overflow: hidden;
+			.title{
+				width: 80%;
+				color: #fff;
+				background-color: @lead-blue-dark;
+				float: left;
+				padding: 5px;
+			}
+			.date{
+				width: 20%;
+				color: #fff;
+				background-color: @brand-primary;
+				float: left;
+				padding: 5px;
+				text-align: center;
+			}
+			.description{
+				padding: 5px;
+			}
+		}
+	}
+}
+
+
+
 
 #dashboard{
 
@@ -885,6 +990,9 @@ section#main{
 				}
 			}
 			
+			.scroll{
+				height: 350px;
+			}
 		}
 	}
 	

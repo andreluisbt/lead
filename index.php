@@ -29,8 +29,8 @@
     	                </div>
     	            </a>
 	            </div>
-            
-	            <div id="calendar" class="col-md-6">
+	            
+	            <div id="calendar" class="calendar col-md-6">
 	                <div class="all-months col-md-12 active">
     	                <div class="year-bar">
     	                    <a href="#" class="btn prev">
@@ -131,6 +131,182 @@
                                     </span>
                                     VOLTAR
                                 </a>
+                                
+                                <div class="scroll">
+                                    <div class="days">
+                                        <div class="week">
+                                            <ul>
+                                                <li class="name sunday">DOM</li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <span class="flag"></span>
+                                                        23
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                            </ul>
+                                            
+                                        </div>
+                                        <div class="week">
+                                            <ul>
+                                                <li class="name">SEG</li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li class="today">
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="week">
+                                            <ul>
+                                                <li class="name">TER</li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="week">
+                                            <ul>
+                                                <li class="name">QUA</li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="week">
+                                            <ul>
+                                                <li class="name">QUI</li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="week">
+                                            <ul>
+                                                <li class="name">SEX</li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                            </ul>
+                                            
+                                        </div>
+                                        <div class="week">
+                                            <ul>
+                                                <li class="name saturday">SAB</li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">23</a>
+                                                </li>
+                                            </ul>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="events">
+                                        <div class="event">
+                                            <div class="title">Java Android</div>
+                                            <div class="date">07/06</div>
+                                            <div class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="title">Java Android</div>
+                                            <div class="date">07/06</div>
+                                            <div class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                        <div class="event">
+                                            <div class="title">Java Android</div>
+                                            <div class="date">07/06</div>
+                                            <div class="description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
 							</div>
 						</div>
 					</div>
