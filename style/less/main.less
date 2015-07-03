@@ -192,8 +192,22 @@ h4, .h4, h5, .h5, h6, .h6 {
 	      	padding: 6px 15px;
 	    }
 	}
-	
 }
+
+.panel-group{
+	.panel{
+		.panel-heading{
+			padding: 5px;
+		}
+		.panel-title{
+			font-size: 1.2em;
+			a{
+				display: block;
+			}
+		}
+	}
+}
+
 
 .form-control{
 	font-size: 1em;
@@ -1606,6 +1620,116 @@ section#main{
 	
 }
 
+
+#reportGrades{
+	
+	.export{
+		padding: 20px 0;
+		text-align: right;
+	}
+
+	#gradesAccordion{
+		.panel-title{
+			line-height: 2em;
+			a{
+				span{
+					width: 40px;
+					background-color: @lead-blue-xdark;
+				}
+				
+				&.collapsed{
+					span{
+						i{
+							transform: rotate(180deg);
+						}
+					}
+				}
+			}
+		}
+		
+		.panel-body{
+			padding: 0;
+			.grade-lesson{
+				padding: 15px;
+				margin-bottom: 20px;
+				text-align: center;
+				background-color: #fff;
+				
+				.frequence,
+				.status{
+					padding: 10px;
+				}
+				
+				.panel{
+					.panel-body{
+						background-color: @lead-gray-xlight;
+						padding: 20px;
+					}
+					
+					&.oas{
+						display: inline-block;
+						margin: 20px 0;
+					}
+				}
+				
+				ul.grades{
+					display: inline-block;
+					li{
+						float: left;
+						.title{
+							background-color: @brand-primary;
+							color: #fff;
+							width: 120px;
+							height: 60px;
+							display: table-cell;
+							vertical-align: middle;
+							padding: 5px;
+							font-size: .8em;
+						}
+						.grade{
+							border: 1px solid @lead-gray-base;
+							padding: 5px;
+						}
+						
+						&:nth-of-type(even){
+							.title{
+								background-color: @lead-blue-xdark;
+							}
+						}
+						
+					}
+				}
+				
+				@media (max-width: @screen-xs-max) {
+					
+					.panel{
+						&.oas{
+							display: block;
+						}
+					}
+					
+					ul.grades{
+						display: block;
+						li{
+							width: 50%;
+							.title{
+								display: block;
+								width: initial;
+							}
+						}
+					}
+				}
+				
+				
+				.buttons{
+					padding: 20px 0;
+					text-align: right;
+				}
+				
+			}
+		}
+	}
+}
 
 footer {
 	background-color: @brand-primary;
